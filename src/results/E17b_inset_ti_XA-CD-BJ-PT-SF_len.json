@@ -1,0 +1,231 @@
+{
+  "features": [
+    "log_detour_len",
+    "log_ratio_fft",
+    "major_share",
+    "log_ratio_nseg",
+    "log_path_size"
+  ],
+  "cities": {
+    "xian": {
+      "covered_share_test": 0.7656,
+      "covered_share_train": 0.7661,
+      "n_test": 76557,
+      "beta_incity": [
+        -3.302,
+        -1.155,
+        1.76,
+        -7.238,
+        -1.451
+      ],
+      "hit_incity": 0.8838,
+      "single": {
+        "CD": {
+          "TI": 0.9608,
+          "TTS": 3522.2
+        },
+        "BJ": {
+          "TI": 0.9622,
+          "TTS": 3392.2
+        },
+        "PT": {
+          "TI": 0.9017,
+          "TTS": 8827.5
+        },
+        "SF": {
+          "TI": 0.9129,
+          "TTS": 7820.2
+        }
+      },
+      "pooled": {
+        "TI": 0.9533,
+        "TTS": 4192.0,
+        "hit": 0.8831,
+        "beta": [
+          -6.974,
+          -4.308,
+          0.809,
+          -3.264,
+          0.507
+        ]
+      },
+      "oracle_label_TI_pooled_all_trips": 0.9641
+    },
+    "chengdu": {
+      "covered_share_test": 0.7174,
+      "covered_share_train": 0.7197,
+      "n_test": 71744,
+      "beta_incity": [
+        -4.723,
+        -4.621,
+        2.133,
+        -4.429,
+        1.447
+      ],
+      "hit_incity": 0.9015,
+      "single": {
+        "XA": {
+          "TI": 0.9615,
+          "TTS": 3796.4
+        },
+        "BJ": {
+          "TI": 0.9752,
+          "TTS": 2448.6
+        },
+        "PT": {
+          "TI": 0.9703,
+          "TTS": 2923.5
+        },
+        "SF": {
+          "TI": 0.9597,
+          "TTS": 3968.0
+        }
+      },
+      "pooled": {
+        "TI": 0.9842,
+        "TTS": 1558.4,
+        "hit": 0.8922,
+        "beta": [
+          -6.682,
+          -3.657,
+          0.724,
+          -4.13,
+          -0.094
+        ]
+      },
+      "oracle_label_TI_pooled_all_trips": 0.9811
+    },
+    "beijing": {
+      "covered_share_test": 0.6506,
+      "covered_share_train": 0.6518,
+      "n_test": 65059,
+      "beta_incity": [
+        -8.0,
+        -3.191,
+        0.241,
+        -3.814,
+        -0.163
+      ],
+      "hit_incity": 0.793,
+      "single": {
+        "XA": {
+          "TI": 0.9356,
+          "TTS": 5654.4
+        },
+        "CD": {
+          "TI": 0.9321,
+          "TTS": 5963.4
+        },
+        "PT": {
+          "TI": 0.9138,
+          "TTS": 7569.2
+        },
+        "SF": {
+          "TI": 0.9715,
+          "TTS": 2503.6
+        }
+      },
+      "pooled": {
+        "TI": 0.9743,
+        "TTS": 2260.4,
+        "hit": 0.7819,
+        "beta": [
+          -5.585,
+          -4.196,
+          1.243,
+          -4.49,
+          0.389
+        ]
+      },
+      "oracle_label_TI_pooled_all_trips": 0.9724
+    },
+    "porto": {
+      "covered_share_test": 0.3329,
+      "covered_share_train": 0.3357,
+      "n_test": 33286,
+      "beta_incity": [
+        -2.755,
+        -8.248,
+        0.782,
+        -1.814,
+        -0.047
+      ],
+      "hit_incity": 0.7734,
+      "single": {
+        "XA": {
+          "TI": 0.8706,
+          "TTS": 7313.5
+        },
+        "CD": {
+          "TI": 0.947,
+          "TTS": 2995.2
+        },
+        "BJ": {
+          "TI": 0.9244,
+          "TTS": 4268.7
+        },
+        "SF": {
+          "TI": 0.8893,
+          "TTS": 6252.7
+        }
+      },
+      "pooled": {
+        "TI": 0.9281,
+        "TTS": 4063.1,
+        "hit": 0.7527,
+        "beta": [
+          -7.305,
+          -2.979,
+          0.967,
+          -4.637,
+          0.319
+        ]
+      },
+      "oracle_label_TI_pooled_all_trips": 0.9192
+    },
+    "sanfrancisco": {
+      "covered_share_test": 0.2218,
+      "covered_share_train": 0.225,
+      "n_test": 12999,
+      "beta_incity": [
+        -14.242,
+        -3.837,
+        1.265,
+        -2.689,
+        1.252
+      ],
+      "hit_incity": 0.7313,
+      "single": {
+        "XA": {
+          "TI": 0.8288,
+          "TTS": 3686.2
+        },
+        "CD": {
+          "TI": 0.8959,
+          "TTS": 2240.6
+        },
+        "BJ": {
+          "TI": 0.9599,
+          "TTS": 864.1
+        },
+        "PT": {
+          "TI": 0.7983,
+          "TTS": 4342.6
+        }
+      },
+      "pooled": {
+        "TI": 0.931,
+        "TTS": 1486.0,
+        "hit": 0.6857,
+        "beta": [
+          -4.959,
+          -3.899,
+          0.842,
+          -4.259,
+          -0.061
+        ]
+      },
+      "oracle_label_TI_pooled_all_trips": 0.9174
+    }
+  }
+}

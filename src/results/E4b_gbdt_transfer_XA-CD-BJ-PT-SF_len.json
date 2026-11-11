@@ -1,0 +1,187 @@
+{
+  "xian": {
+    "G1_incity_gbdt_noregion": {
+      "top1_f1": 0.8766,
+      "exp_f1": 0.8426,
+      "flow_nmae": 0.1687
+    },
+    "G2_zeroshot_gbdt_from_CD": {
+      "top1_f1": 0.845,
+      "exp_f1": 0.8132,
+      "flow_nmae": 0.2444
+    },
+    "G2_zeroshot_gbdt_from_BJ": {
+      "top1_f1": 0.8581,
+      "exp_f1": 0.8242,
+      "flow_nmae": 0.2179
+    },
+    "G2_zeroshot_gbdt_from_PT": {
+      "top1_f1": 0.8472,
+      "exp_f1": 0.7966,
+      "flow_nmae": 0.2564
+    },
+    "G2_zeroshot_gbdt_from_SF": {
+      "top1_f1": 0.8523,
+      "exp_f1": 0.7923,
+      "flow_nmae": 0.2664
+    },
+    "G3_zeroshot_gbdt_pooled": {
+      "top1_f1": 0.8552,
+      "exp_f1": 0.813,
+      "flow_nmae": 0.2347
+    },
+    "L3_zeroshot_logit_pooled": {
+      "top1_f1": 0.8484,
+      "exp_f1": 0.8096,
+      "flow_nmae": 0.2462
+    }
+  },
+  "chengdu": {
+    "G1_incity_gbdt_noregion": {
+      "top1_f1": 0.8888,
+      "exp_f1": 0.858,
+      "flow_nmae": 0.1472
+    },
+    "G2_zeroshot_gbdt_from_XA": {
+      "top1_f1": 0.8596,
+      "exp_f1": 0.8153,
+      "flow_nmae": 0.2069
+    },
+    "G2_zeroshot_gbdt_from_BJ": {
+      "top1_f1": 0.8619,
+      "exp_f1": 0.8315,
+      "flow_nmae": 0.1979
+    },
+    "G2_zeroshot_gbdt_from_PT": {
+      "top1_f1": 0.8592,
+      "exp_f1": 0.8046,
+      "flow_nmae": 0.2099
+    },
+    "G2_zeroshot_gbdt_from_SF": {
+      "top1_f1": 0.866,
+      "exp_f1": 0.7967,
+      "flow_nmae": 0.2097
+    },
+    "G3_zeroshot_gbdt_pooled": {
+      "top1_f1": 0.869,
+      "exp_f1": 0.816,
+      "flow_nmae": 0.2032
+    },
+    "L3_zeroshot_logit_pooled": {
+      "top1_f1": 0.8715,
+      "exp_f1": 0.8124,
+      "flow_nmae": 0.21
+    }
+  },
+  "beijing": {
+    "G1_incity_gbdt_noregion": {
+      "top1_f1": 0.8189,
+      "exp_f1": 0.7653,
+      "flow_nmae": 0.2002
+    },
+    "G2_zeroshot_gbdt_from_XA": {
+      "top1_f1": 0.801,
+      "exp_f1": 0.7486,
+      "flow_nmae": 0.2276
+    },
+    "G2_zeroshot_gbdt_from_CD": {
+      "top1_f1": 0.7953,
+      "exp_f1": 0.7486,
+      "flow_nmae": 0.231
+    },
+    "G2_zeroshot_gbdt_from_PT": {
+      "top1_f1": 0.7986,
+      "exp_f1": 0.7373,
+      "flow_nmae": 0.2255
+    },
+    "G2_zeroshot_gbdt_from_SF": {
+      "top1_f1": 0.8075,
+      "exp_f1": 0.7323,
+      "flow_nmae": 0.2337
+    },
+    "G3_zeroshot_gbdt_pooled": {
+      "top1_f1": 0.808,
+      "exp_f1": 0.745,
+      "flow_nmae": 0.2231
+    },
+    "L3_zeroshot_logit_pooled": {
+      "top1_f1": 0.8031,
+      "exp_f1": 0.7469,
+      "flow_nmae": 0.2318
+    }
+  },
+  "porto": {
+    "G1_incity_gbdt_noregion": {
+      "top1_f1": 0.6804,
+      "exp_f1": 0.5981,
+      "flow_nmae": 0.3482
+    },
+    "G2_zeroshot_gbdt_from_XA": {
+      "top1_f1": 0.6405,
+      "exp_f1": 0.5742,
+      "flow_nmae": 0.3838
+    },
+    "G2_zeroshot_gbdt_from_CD": {
+      "top1_f1": 0.6358,
+      "exp_f1": 0.5778,
+      "flow_nmae": 0.3782
+    },
+    "G2_zeroshot_gbdt_from_BJ": {
+      "top1_f1": 0.6475,
+      "exp_f1": 0.596,
+      "flow_nmae": 0.3816
+    },
+    "G2_zeroshot_gbdt_from_SF": {
+      "top1_f1": 0.6481,
+      "exp_f1": 0.582,
+      "flow_nmae": 0.3825
+    },
+    "G3_zeroshot_gbdt_pooled": {
+      "top1_f1": 0.6482,
+      "exp_f1": 0.5901,
+      "flow_nmae": 0.3804
+    },
+    "L3_zeroshot_logit_pooled": {
+      "top1_f1": 0.65,
+      "exp_f1": 0.5899,
+      "flow_nmae": 0.3814
+    }
+  },
+  "sanfrancisco": {
+    "G1_incity_gbdt_noregion": {
+      "top1_f1": 0.524,
+      "exp_f1": 0.4396,
+      "flow_nmae": 0.4225
+    },
+    "G2_zeroshot_gbdt_from_XA": {
+      "top1_f1": 0.4718,
+      "exp_f1": 0.4105,
+      "flow_nmae": 0.4411
+    },
+    "G2_zeroshot_gbdt_from_CD": {
+      "top1_f1": 0.4852,
+      "exp_f1": 0.4264,
+      "flow_nmae": 0.4445
+    },
+    "G2_zeroshot_gbdt_from_BJ": {
+      "top1_f1": 0.5022,
+      "exp_f1": 0.434,
+      "flow_nmae": 0.4509
+    },
+    "G2_zeroshot_gbdt_from_PT": {
+      "top1_f1": 0.4876,
+      "exp_f1": 0.4197,
+      "flow_nmae": 0.4429
+    },
+    "G3_zeroshot_gbdt_pooled": {
+      "top1_f1": 0.5022,
+      "exp_f1": 0.4271,
+      "flow_nmae": 0.4467
+    },
+    "L3_zeroshot_logit_pooled": {
+      "top1_f1": 0.5081,
+      "exp_f1": 0.436,
+      "flow_nmae": 0.4529
+    }
+  }
+}

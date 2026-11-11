@@ -1,0 +1,567 @@
+{
+ "xian": {
+  "share_seen_100k": 0.85616,
+  "share_seen_all": 0.95121,
+  "gbdt_in_vs_logit_in": {
+   "gap": 0.026896,
+   "differ": 0.14887,
+   "cond_gain": 0.180665,
+   "abs_cond": 0.370989,
+   "a_better": 0.708336,
+   "b_better": 0.291664,
+   "identity_err": 0.0
+  },
+  "gbdt_zs_vs_logit_zs": {
+   "gap": 0.006802,
+   "differ": 0.09671,
+   "cond_gain": 0.070329,
+   "abs_cond": 0.298031,
+   "a_better": 0.590322,
+   "b_better": 0.409678,
+   "identity_err": 0.0
+  },
+  "gbdt5_in_vs_logit_in": {
+   "gap": 0.024494,
+   "differ": 0.14151,
+   "cond_gain": 0.173087,
+   "abs_cond": 0.364832,
+   "a_better": 0.700445,
+   "b_better": 0.299555,
+   "identity_err": 0.0
+  },
+  "gbdt_gain_by_od": {
+   "seen": {
+    "share": 0.85616,
+    "gain": 0.025632,
+    "contrib": 0.021945,
+    "ci95": [
+     0.02113,
+     0.03091
+    ],
+    "clusters": 11139
+   },
+   "unseen": {
+    "share": 0.14384,
+    "gain": 0.034415,
+    "contrib": 0.00495,
+    "ci95": [
+     0.03068,
+     0.03832
+    ],
+    "clusters": 11928
+   }
+  },
+  "gbdt5_gain_by_od": {
+   "seen": {
+    "share": 0.85616,
+    "gain": 0.024074,
+    "contrib": 0.020611,
+    "ci95": [
+     0.01973,
+     0.02914
+    ],
+    "clusters": 11139
+   },
+   "unseen": {
+    "share": 0.14384,
+    "gain": 0.02699,
+    "contrib": 0.003882,
+    "ci95": [
+     0.02344,
+     0.03075
+    ],
+    "clusters": 11928
+   }
+  },
+  "transfer_gap_by_od": {
+   "seen": {
+    "share": 0.85616,
+    "gain": 0.001584,
+    "contrib": 0.001356,
+    "ci95": [
+     -0.0003,
+     0.00364
+    ],
+    "clusters": 11139
+   },
+   "unseen": {
+    "share": 0.14384,
+    "gain": -6.8e-05,
+    "contrib": -1e-05,
+    "ci95": [
+     -0.00284,
+     0.00263
+    ],
+    "clusters": 11928
+   }
+  }
+ },
+ "chengdu": {
+  "share_seen_100k": 0.87502,
+  "share_seen_all": 0.97006,
+  "gbdt_in_vs_logit_in": {
+   "gap": 0.018062,
+   "differ": 0.14442,
+   "cond_gain": 0.125062,
+   "abs_cond": 0.270251,
+   "a_better": 0.71202,
+   "b_better": 0.28798,
+   "identity_err": 0.0
+  },
+  "gbdt_zs_vs_logit_zs": {
+   "gap": -0.002431,
+   "differ": 0.08005,
+   "cond_gain": -0.030371,
+   "abs_cond": 0.281213,
+   "a_better": 0.451843,
+   "b_better": 0.548032,
+   "identity_err": 0.0
+  },
+  "gbdt5_in_vs_logit_in": {
+   "gap": 0.016531,
+   "differ": 0.14855,
+   "cond_gain": 0.111285,
+   "abs_cond": 0.265437,
+   "a_better": 0.688657,
+   "b_better": 0.311343,
+   "identity_err": 0.0
+  },
+  "gbdt_gain_by_od": {
+   "seen": {
+    "share": 0.87502,
+    "gain": 0.017931,
+    "contrib": 0.01569,
+    "ci95": [
+     0.01436,
+     0.0219
+    ],
+    "clusters": 10737
+   },
+   "unseen": {
+    "share": 0.12498,
+    "gain": 0.018977,
+    "contrib": 0.002372,
+    "ci95": [
+     0.01569,
+     0.0225
+    ],
+    "clusters": 10208
+   }
+  },
+  "gbdt5_gain_by_od": {
+   "seen": {
+    "share": 0.87502,
+    "gain": 0.016466,
+    "contrib": 0.014408,
+    "ci95": [
+     0.01303,
+     0.02034
+    ],
+    "clusters": 10737
+   },
+   "unseen": {
+    "share": 0.12498,
+    "gain": 0.016991,
+    "contrib": 0.002123,
+    "ci95": [
+     0.01372,
+     0.02033
+    ],
+    "clusters": 10208
+   }
+  },
+  "transfer_gap_by_od": {
+   "seen": {
+    "share": 0.87502,
+    "gain": -0.000313,
+    "contrib": -0.000274,
+    "ci95": [
+     -0.00139,
+     0.00073
+    ],
+    "clusters": 10737
+   },
+   "unseen": {
+    "share": 0.12498,
+    "gain": -0.003519,
+    "contrib": -0.00044,
+    "ci95": [
+     -0.00566,
+     -0.00126
+    ],
+    "clusters": 10208
+   }
+  }
+ },
+ "beijing": {
+  "share_seen_100k": 0.30071,
+  "share_seen_all": 0.68913,
+  "gbdt_in_vs_logit_in": {
+   "gap": 0.012261,
+   "differ": 0.16864,
+   "cond_gain": 0.072707,
+   "abs_cond": 0.2772,
+   "a_better": 0.644628,
+   "b_better": 0.355372,
+   "identity_err": 0.0
+  },
+  "gbdt_zs_vs_logit_zs": {
+   "gap": 0.004815,
+   "differ": 0.14364,
+   "cond_gain": 0.03352,
+   "abs_cond": 0.298067,
+   "a_better": 0.589947,
+   "b_better": 0.410053,
+   "identity_err": 0.0
+  },
+  "gbdt5_in_vs_logit_in": {
+   "gap": 0.008673,
+   "differ": 0.16113,
+   "cond_gain": 0.053828,
+   "abs_cond": 0.264527,
+   "a_better": 0.619438,
+   "b_better": 0.380562,
+   "identity_err": 0.0
+  },
+  "gbdt_gain_by_od": {
+   "seen": {
+    "share": 0.30071,
+    "gain": 0.013409,
+    "contrib": 0.004032,
+    "ci95": [
+     0.01138,
+     0.01539
+    ],
+    "clusters": 14941
+   },
+   "unseen": {
+    "share": 0.69929,
+    "gain": 0.011768,
+    "contrib": 0.008229,
+    "ci95": [
+     0.01054,
+     0.01296
+    ],
+    "clusters": 64923
+   }
+  },
+  "gbdt5_gain_by_od": {
+   "seen": {
+    "share": 0.30071,
+    "gain": 0.010187,
+    "contrib": 0.003063,
+    "ci95": [
+     0.00833,
+     0.01211
+    ],
+    "clusters": 14941
+   },
+   "unseen": {
+    "share": 0.69929,
+    "gain": 0.008022,
+    "contrib": 0.00561,
+    "ci95": [
+     0.00693,
+     0.00916
+    ],
+    "clusters": 64923
+   }
+  },
+  "transfer_gap_by_od": {
+   "seen": {
+    "share": 0.30071,
+    "gain": 0.000818,
+    "contrib": 0.000246,
+    "ci95": [
+     -0.00083,
+     0.00254
+    ],
+    "clusters": 14941
+   },
+   "unseen": {
+    "share": 0.69929,
+    "gain": 0.004714,
+    "contrib": 0.003296,
+    "ci95": [
+     0.00368,
+     0.0057
+    ],
+    "clusters": 64923
+   }
+  }
+ },
+ "porto": {
+  "share_seen_100k": 0.32031,
+  "share_seen_all": 0.53916,
+  "gbdt_in_vs_logit_in": {
+   "gap": 0.025811,
+   "differ": 0.23181,
+   "cond_gain": 0.111346,
+   "abs_cond": 0.27849,
+   "a_better": 0.701738,
+   "b_better": 0.298262,
+   "identity_err": 0.0
+  },
+  "gbdt_zs_vs_logit_zs": {
+   "gap": -0.001736,
+   "differ": 0.14796,
+   "cond_gain": -0.011733,
+   "abs_cond": 0.297158,
+   "a_better": 0.505745,
+   "b_better": 0.494255,
+   "identity_err": 0.0
+  },
+  "gbdt5_in_vs_logit_in": {
+   "gap": 0.022479,
+   "differ": 0.22119,
+   "cond_gain": 0.101627,
+   "abs_cond": 0.275562,
+   "a_better": 0.686423,
+   "b_better": 0.313577,
+   "identity_err": 0.0
+  },
+  "gbdt_gain_by_od": {
+   "seen": {
+    "share": 0.32031,
+    "gain": 0.042436,
+    "contrib": 0.013593,
+    "ci95": [
+     0.03868,
+     0.04633
+    ],
+    "clusters": 15929
+   },
+   "unseen": {
+    "share": 0.67969,
+    "gain": 0.017977,
+    "contrib": 0.012219,
+    "ci95": [
+     0.01653,
+     0.01938
+    ],
+    "clusters": 62741
+   }
+  },
+  "gbdt5_gain_by_od": {
+   "seen": {
+    "share": 0.32031,
+    "gain": 0.039146,
+    "contrib": 0.012539,
+    "ci95": [
+     0.03545,
+     0.04296
+    ],
+    "clusters": 15929
+   },
+   "unseen": {
+    "share": 0.67969,
+    "gain": 0.014624,
+    "contrib": 0.00994,
+    "ci95": [
+     0.01323,
+     0.01603
+    ],
+    "clusters": 62741
+   }
+  },
+  "transfer_gap_by_od": {
+   "seen": {
+    "share": 0.32031,
+    "gain": 0.006141,
+    "contrib": 0.001967,
+    "ci95": [
+     0.00338,
+     0.00898
+    ],
+    "clusters": 15929
+   },
+   "unseen": {
+    "share": 0.67969,
+    "gain": 0.003967,
+    "contrib": 0.002697,
+    "ci95": [
+     0.00266,
+     0.00528
+    ],
+    "clusters": 62741
+   }
+  },
+  "hoser": {
+   "n": 10000,
+   "f1": 0.769808,
+   "logit": 0.650934,
+   "gbdt": 0.677942,
+   "share_in_map6": 0.4528,
+   "share_eq_len": 0.2934,
+   "share_seen_all": 0.5358,
+   "hoser_vs_oracle6": -0.032475,
+   "seen": {
+    "share": 0.5358,
+    "gain_logit": 0.12751,
+    "gain_gbdt": 0.090522,
+    "f1": 0.810437,
+    "logit_f1": 0.682927
+   },
+   "unseen": {
+    "share": 0.4642,
+    "gain_logit": 0.108907,
+    "gain_gbdt": 0.093418,
+    "f1": 0.722913,
+    "logit_f1": 0.614006
+   },
+   "in_map6": {
+    "share": 0.4528,
+    "gain_logit": 0.060544,
+    "contrib": 0.027414,
+    "f1": 0.85249,
+    "oracle6": 0.911897,
+    "logit_f1": 0.791947
+   },
+   "out_map6": {
+    "share": 0.5472,
+    "gain_logit": 0.167143,
+    "contrib": 0.09146,
+    "f1": 0.70139,
+    "oracle6": 0.71158,
+    "logit_f1": 0.534248
+   }
+  }
+ },
+ "sanfrancisco": {
+  "share_seen_100k": 0.090845,
+  "share_seen_all": 0.147786,
+  "gbdt_in_vs_logit_in": {
+   "gap": 0.01141,
+   "differ": 0.226994,
+   "cond_gain": 0.050266,
+   "abs_cond": 0.273482,
+   "a_better": 0.585733,
+   "b_better": 0.414267,
+   "identity_err": 0.0
+  },
+  "gbdt_zs_vs_logit_zs": {
+   "gap": -0.005901,
+   "differ": 0.297722,
+   "cond_gain": -0.019821,
+   "abs_cond": 0.260306,
+   "a_better": 0.482348,
+   "b_better": 0.517652,
+   "identity_err": 0.0
+  },
+  "gbdt5_in_vs_logit_in": {
+   "gap": 0.009348,
+   "differ": 0.214743,
+   "cond_gain": 0.043532,
+   "abs_cond": 0.267902,
+   "a_better": 0.58093,
+   "b_better": 0.41907,
+   "identity_err": 0.0
+  },
+  "gbdt_gain_by_od": {
+   "seen": {
+    "share": 0.090845,
+    "gain": 0.01632,
+    "contrib": 0.001483,
+    "ci95": [
+     0.01121,
+     0.02137
+    ],
+    "clusters": 4418
+   },
+   "unseen": {
+    "share": 0.909155,
+    "gain": 0.01092,
+    "contrib": 0.009928,
+    "ci95": [
+     0.0094,
+     0.01232
+    ],
+    "clusters": 52269
+   }
+  },
+  "gbdt5_gain_by_od": {
+   "seen": {
+    "share": 0.090845,
+    "gain": 0.0129,
+    "contrib": 0.001172,
+    "ci95": [
+     0.00831,
+     0.01782
+    ],
+    "clusters": 4418
+   },
+   "unseen": {
+    "share": 0.909155,
+    "gain": 0.008993,
+    "contrib": 0.008176,
+    "ci95": [
+     0.00755,
+     0.01041
+    ],
+    "clusters": 52269
+   }
+  },
+  "transfer_gap_by_od": {
+   "seen": {
+    "share": 0.090845,
+    "gain": 0.00426,
+    "contrib": 0.000387,
+    "ci95": [
+     -0.00104,
+     0.00965
+    ],
+    "clusters": 4418
+   },
+   "unseen": {
+    "share": 0.909155,
+    "gain": 0.00452,
+    "contrib": 0.00411,
+    "ci95": [
+     0.00299,
+     0.00602
+    ],
+    "clusters": 52269
+   }
+  },
+  "hoser": {
+   "n": 10000,
+   "f1": 0.620249,
+   "logit": 0.513801,
+   "gbdt": 0.522619,
+   "share_in_map6": 0.3369,
+   "share_eq_len": 0.2011,
+   "share_seen_all": 0.1422,
+   "hoser_vs_oracle6": -0.059274,
+   "seen": {
+    "share": 0.1422,
+    "gain_logit": 0.117438,
+    "gain_gbdt": 0.103138,
+    "f1": 0.705859,
+    "logit_f1": 0.58842
+   },
+   "unseen": {
+    "share": 0.8578,
+    "gain_logit": 0.104626,
+    "gain_gbdt": 0.096717,
+    "f1": 0.606057,
+    "logit_f1": 0.501431
+   },
+   "in_map6": {
+    "share": 0.3369,
+    "gain_logit": 0.049419,
+    "contrib": 0.016649,
+    "f1": 0.731613,
+    "oracle6": 0.834543,
+    "logit_f1": 0.682194
+   },
+   "out_map6": {
+    "share": 0.6631,
+    "gain_logit": 0.135422,
+    "contrib": 0.089798,
+    "f1": 0.563668,
+    "oracle6": 0.600763,
+    "logit_f1": 0.428246
+   }
+  }
+ }
+}

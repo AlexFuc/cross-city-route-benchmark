@@ -1,0 +1,32 @@
+{
+  "xian": {
+    "oracle6": 0.932,
+    "len_top1": 0.8381,
+    "len_flow": 0.3516,
+    "uniform_flow": 0.4924
+  },
+  "chengdu": {
+    "oracle6": 0.939,
+    "len_top1": 0.861,
+    "len_flow": 0.2233,
+    "uniform_flow": 0.5079
+  },
+  "beijing": {
+    "oracle6": 0.9172,
+    "len_top1": 0.7297,
+    "len_flow": 0.4974,
+    "uniform_flow": 0.4745
+  },
+  "porto": {
+    "oracle6": 0.8034,
+    "len_top1": 0.617,
+    "len_flow": 0.4666,
+    "uniform_flow": 0.4917
+  },
+  "sanfrancisco": {
+    "oracle6": 0.6818,
+    "len_top1": 0.4626,
+    "len_flow": 0.5811,
+    "uniform_flow": 0.4988
+  }
+}

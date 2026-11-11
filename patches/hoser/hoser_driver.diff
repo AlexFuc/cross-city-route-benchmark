@@ -1,0 +1,25 @@
+173a174,175
+>     parser.add_argument('--test_rows', type=str)   # DRIVER: .npy of test.csv row indices to generate for
+>     parser.add_argument('--out_csv', type=str)     # DRIVER: output path
+349,350c351,356
+<     od_indices = np.random.choice(non_zero_indices, size=args.num_gene, p=od_probabilities)
+<     od_coords = np.column_stack(np.unravel_index(od_indices, od_mat.shape))
+---
+>     # DRIVER: OD-conditioned evaluation -- origin, destination and departure time of the given test trips
+>     test_traj = pd.read_csv(test_traj_file)
+>     test_rows = np.load(args.test_rows)
+>     sel = test_traj.iloc[test_rows]
+>     od_coords = np.array([[eval(r)[0], eval(r)[-1]] for r in sel['rid_list']], dtype=np.int64)
+>     args.num_gene = len(test_rows)
+352c358
+<     origin_datetime_list = [datetime.strptime(row.split(',')[0], '%Y-%m-%dT%H:%M:%SZ') for row in random.sample(list(train_traj['time_list']), args.num_gene)]
+---
+>     origin_datetime_list = [datetime.strptime(t.split(',')[0], '%Y-%m-%dT%H:%M:%SZ') for t in sel['time_list']]   # DRIVER
+378a385
+>         'test_row': test_rows,   # DRIVER
+382,384c389
+<     os.makedirs(gene_dir, exist_ok=True)
+<     now = datetime.now()
+<     res_df.to_csv(os.path.join(gene_dir, f'{now.strftime("%Y-%m-%d_%H-%M-%S")}.csv'), index=False)
+---
+>     res_df.to_csv(args.out_csv, index=False)   # DRIVER

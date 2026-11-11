@@ -1,0 +1,13 @@
+{
+  "city": "xian",
+  "workers": 10,
+  "n_test": 100000,
+  "candidates_s": 25.6,
+  "fit_logit_s": 8.1,
+  "predict_logit_s": 0.02,
+  "fit_gbdt_s": 9.5,
+  "predict_gbdt_s": 1.1,
+  "odhist_build_s": 1.7,
+  "n_unique_candidates": 316062,
+  "mean_candidates_per_od": 3.16
+}

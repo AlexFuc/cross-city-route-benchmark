@@ -1,0 +1,13 @@
+{
+  "city": "sanfrancisco",
+  "workers": 10,
+  "n_test": 58605,
+  "candidates_s": 445.2,
+  "fit_logit_s": 8.1,
+  "predict_logit_s": 0.02,
+  "fit_gbdt_s": 5.8,
+  "predict_gbdt_s": 0.5,
+  "odhist_build_s": 1.8,
+  "n_unique_candidates": 293606,
+  "mean_candidates_per_od": 5.01
+}

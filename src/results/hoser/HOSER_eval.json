@@ -1,0 +1,96 @@
+{
+  "porto": {
+    "n": 10000,
+    "hoser_missing": 0,
+    "hoser_reached_destination": 1.0,
+    "HOSER_official": {
+      "top1_count": 0.7645,
+      "top1_length": 0.7698,
+      "flow_nmae": 0.1387,
+      "hausdorff_mean": 0.3166
+    },
+    "LEN_shortest": {
+      "top1_count": 0.6076,
+      "top1_length": 0.6148,
+      "flow_nmae": 0.454,
+      "hausdorff_mean": 0.4776
+    },
+    "zeroshot_logit_pooled": {
+      "top1_count": 0.6381,
+      "top1_length": 0.6487,
+      "flow_nmae": 0.3836,
+      "hausdorff_mean": 0.4425
+    },
+    "incity_logit": {
+      "top1_count": 0.6406,
+      "top1_length": 0.6509,
+      "flow_nmae": 0.3882,
+      "hausdorff_mean": 0.4438
+    },
+    "incity_gbdt": {
+      "top1_count": 0.6676,
+      "top1_length": 0.6779,
+      "flow_nmae": 0.3337,
+      "hausdorff_mean": 0.4146
+    },
+    "incity_od_history": {
+      "top1_count": 0.7103,
+      "top1_length": 0.7191,
+      "flow_nmae": 0.2039,
+      "hausdorff_mean": 0.368
+    },
+    "oracle6": {
+      "top1_count": 0.7888,
+      "top1_length": 0.8023,
+      "flow_nmae": 0.2459,
+      "hausdorff_mean": 0.2892
+    }
+  },
+  "sanfrancisco": {
+    "n": 10000,
+    "hoser_missing": 0,
+    "hoser_reached_destination": 1.0,
+    "HOSER_official": {
+      "top1_count": 0.6135,
+      "top1_length": 0.6202,
+      "flow_nmae": 0.2001,
+      "hausdorff_mean": 0.3743
+    },
+    "LEN_shortest": {
+      "top1_count": 0.4591,
+      "top1_length": 0.4647,
+      "flow_nmae": 0.5571,
+      "hausdorff_mean": 0.4998
+    },
+    "zeroshot_logit_pooled": {
+      "top1_count": 0.495,
+      "top1_length": 0.5075,
+      "flow_nmae": 0.6217,
+      "hausdorff_mean": 0.4327
+    },
+    "incity_logit": {
+      "top1_count": 0.5025,
+      "top1_length": 0.5138,
+      "flow_nmae": 0.5221,
+      "hausdorff_mean": 0.4364
+    },
+    "incity_gbdt": {
+      "top1_count": 0.5119,
+      "top1_length": 0.5226,
+      "flow_nmae": 0.5008,
+      "hausdorff_mean": 0.4351
+    },
+    "incity_od_history": {
+      "top1_count": 0.5095,
+      "top1_length": 0.5213,
+      "flow_nmae": 0.5633,
+      "hausdorff_mean": 0.4267
+    },
+    "oracle6": {
+      "top1_count": 0.6686,
+      "top1_length": 0.6795,
+      "flow_nmae": 0.3176,
+      "hausdorff_mean": 0.3215
+    }
+  }
+}

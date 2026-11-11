@@ -1,0 +1,38 @@
+{
+  "CD->XA": {
+    "disentangle_h": 15.61,
+    "preference_h": 4.09,
+    "pref_end_marker": "epoch 0 traj 81200, F1 score 0.86527666",
+    "generate_s": 40
+  },
+  "XA->CD": {
+    "disentangle_h": 16.99,
+    "preference_h": 7.44,
+    "pref_end_marker": "epoch 0 traj 137700, F1 score 0.85837685",
+    "generate_s": 37
+  },
+  "XA->BJ": {
+    "disentangle_h": 18.05,
+    "preference_h": 6.55,
+    "pref_end_marker": "epoch 0 traj 119500, F1 score 0.85752405",
+    "generate_s": 67
+  },
+  "CD->BJ": {
+    "disentangle_h": 15.83,
+    "preference_h": 4.27,
+    "pref_end_marker": "epoch 0 traj 84000, F1 score 0.87059830",
+    "generate_s": 70
+  },
+  "BJ->XA": {
+    "disentangle_h": 60.08,
+    "preference_h": 7.29,
+    "note": "epochs 596-599 and preference training via takeover (vectorized build_graph)",
+    "generate_s": 36
+  },
+  "BJ->CD": {
+    "disentangle_h": 59.67,
+    "preference_h": 2.35,
+    "note": "epochs 596-599 and preference training via takeover (vectorized build_graph)",
+    "generate_s": 36
+  }
+}

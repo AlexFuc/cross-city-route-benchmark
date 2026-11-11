@@ -1,0 +1,122 @@
+{
+  "xian": {
+    "zeroshot": 0.8484,
+    "incity_logit": 0.8497,
+    "incity_gbdt": 0.8766,
+    "bok": 0.932,
+    "odhist_full": 0.8882,
+    "frequent_od": {
+      "n": 75380,
+      "loo_ceiling": 0.9452,
+      "zeroshot": 0.9106,
+      "incity_logit": 0.9117,
+      "incity_gbdt": 0.9354,
+      "bok": 0.9683,
+      "odhist_full": 0.9449
+    },
+    "stats": {
+      "segments": 4147,
+      "train_trips": 643574,
+      "test_trips": 160728,
+      "median_trip_km": 1.96,
+      "exact_shortest_share": 0.655,
+      "od_recurrence": 0.951
+    }
+  },
+  "chengdu": {
+    "zeroshot": 0.8715,
+    "incity_logit": 0.8708,
+    "incity_gbdt": 0.8888,
+    "bok": 0.939,
+    "odhist_full": 0.9196,
+    "frequent_od": {
+      "n": 81907,
+      "loo_ceiling": 0.9446,
+      "zeroshot": 0.9002,
+      "incity_logit": 0.9,
+      "incity_gbdt": 0.9172,
+      "bok": 0.9534,
+      "odhist_full": 0.944
+    },
+    "stats": {
+      "segments": 3514,
+      "train_trips": 1001790,
+      "test_trips": 250443,
+      "median_trip_km": 1.99,
+      "exact_shortest_share": 0.631,
+      "od_recurrence": 0.97
+    }
+  },
+  "beijing": {
+    "zeroshot": 0.8031,
+    "incity_logit": 0.8067,
+    "incity_gbdt": 0.8189,
+    "bok": 0.9172,
+    "odhist_full": 0.836,
+    "frequent_od": {
+      "n": 25753,
+      "loo_ceiling": 0.942,
+      "zeroshot": 0.9012,
+      "incity_logit": 0.9018,
+      "incity_gbdt": 0.9141,
+      "bok": 0.966,
+      "odhist_full": 0.9399
+    },
+    "stats": {
+      "segments": 14685,
+      "train_trips": 1875916,
+      "test_trips": 468846,
+      "median_trip_km": 3.24,
+      "exact_shortest_share": 0.451,
+      "od_recurrence": 0.689
+    }
+  },
+  "porto": {
+    "zeroshot": 0.65,
+    "incity_logit": 0.6546,
+    "incity_gbdt": 0.6804,
+    "bok": 0.8034,
+    "odhist_full": 0.7227,
+    "frequent_od": {
+      "n": 12490,
+      "loo_ceiling": 0.8732,
+      "zeroshot": 0.7117,
+      "incity_logit": 0.7202,
+      "incity_gbdt": 0.7725,
+      "bok": 0.8468,
+      "odhist_full": 0.8714
+    },
+    "stats": {
+      "segments": 11024,
+      "train_trips": 481359,
+      "test_trips": 137532,
+      "median_trip_km": 3.45,
+      "exact_shortest_share": 0.22,
+      "od_recurrence": 0.539
+    }
+  },
+  "sanfrancisco": {
+    "zeroshot": 0.5081,
+    "incity_logit": 0.5126,
+    "incity_gbdt": 0.524,
+    "bok": 0.6818,
+    "odhist_full": 0.5219,
+    "frequent_od": {
+      "n": 127,
+      "loo_ceiling": 0.7856,
+      "zeroshot": 0.687,
+      "incity_logit": 0.7139,
+      "incity_gbdt": 0.7185,
+      "bok": 0.8157,
+      "odhist_full": 0.8072
+    },
+    "stats": {
+      "segments": 27187,
+      "train_trips": 205116,
+      "test_trips": 58605,
+      "median_trip_km": 3.2,
+      "exact_shortest_share": 0.138,
+      "od_recurrence": 0.148
+    }
+  }
+}

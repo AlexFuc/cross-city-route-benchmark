@@ -1,0 +1,95 @@
+320a321,369
+> 
+>     # ---- ACCUM helpers (added; see hoser_accum.diff) ----
+>     ACCUM = int(os.environ.get('HOSER_ACCUM', '2'))
+> 
+>     
+>     def chunk_loss_sums(model, t, device):
+>         """Same computation as the official loss, but returning SUMS over valid steps instead of means."""
+>         (trace_road_id, temporal_info, trace_distance_mat, trace_time_interval_mat, trace_len, destination_road_id,
+>          candidate_road_id, metric_dis, metric_angle, candidate_len, road_label, timestamp_label) = t
+>         logits, time_pred = model(trace_road_id, temporal_info, trace_distance_mat, trace_time_interval_mat, trace_len, destination_road_id, candidate_road_id, metric_dis, metric_angle)
+>         logits_mask = torch.arange(logits.size(1), dtype=torch.int64, device=device).unsqueeze(0) < trace_len.unsqueeze(1)
+>         selected_logits = logits[logits_mask]
+>         selected_candidate_len = candidate_len[logits_mask]
+>         selected_road_label = road_label[logits_mask]
+>         candidate_mask = torch.arange(selected_logits.size(1), dtype=torch.int64, device=device).unsqueeze(0) < selected_candidate_len.unsqueeze(1)
+>         masked_selected_logits = selected_logits.masked_fill(~candidate_mask, float('-inf'))
+>         l_next = F.cross_entropy(masked_selected_logits, selected_road_label, reduction='sum')
+>         selected_time_pred = time_pred[logits_mask][torch.arange(time_pred[logits_mask].size(0)), selected_road_label]
+>         selected_time_pred = selected_time_pred * timestamp_label_array_log1p_std + timestamp_label_array_log1p_mean
+>         selected_timestamp_label = timestamp_label[logits_mask]
+>         selected_timestamp_label = selected_timestamp_label * timestamp_label_array_log1p_std + timestamp_label_array_log1p_mean
+>         l_time = torch.sum(torch.abs(selected_time_pred - selected_timestamp_label) / torch.clamp(selected_timestamp_label, min=1.0))
+>         return l_next, l_time
+> 
+>     
+>     def accum_check(model, batch, device, n_rows=64):
+>         """Self-check on the first batch (first n_rows trajectories, fp32): gradient of the official mean loss vs the
+>         accumulated chunk gradient. Logged; training continues either way. Parameters are not updated here."""
+>         t = [x[:n_rows] for x in batch]
+>         n = t[4].sum()
+>         params = [p for p in model.parameters() if p.requires_grad]
+>         model.zero_grad()
+>         model.setup_road_network_features()
+>         a, b = chunk_loss_sums(model, t, device)
+>         ((a + b) / n).backward()
+>         g_full = [p.grad.detach().clone() if p.grad is not None else torch.zeros_like(p) for p in params]
+>         model.zero_grad()
+>         for rows in torch.arange(n_rows, device=device).tensor_split(ACCUM):
+>             model.setup_road_network_features()
+>             a, b = chunk_loss_sums(model, [x[rows] for x in t], device)
+>             ((a + b) / n).backward()
+>         g_acc = [p.grad.detach().clone() if p.grad is not None else torch.zeros_like(p) for p in params]
+>         model.zero_grad()
+>         num = max(float((x - y).abs().max()) for x, y in zip(g_full, g_acc))
+>         den = max(float(x.abs().max()) for x in g_full)
+>         logger.info(f'[accum-check] ACCUM={ACCUM}, {n_rows} rows, fp32: max|g_full - g_accum| = {num:.3e} (max|g_full| = {den:.3e})')
+> 
+>     
+>     accum_checked = False
+347,369c396,415
+<             with torch.cuda.amp.autocast():
+<                 logits, time_pred = model(batch_trace_road_id, batch_temporal_info, batch_trace_distance_mat, batch_trace_time_interval_mat, batch_trace_len, batch_destination_road_id, batch_candidate_road_id, batch_metric_dis, batch_metric_angle)
+< 
+<                 logits_mask = torch.arange(logits.size(1), dtype=torch.int64, device=device).unsqueeze(0) < batch_trace_len.unsqueeze(1)
+<                 selected_logits = logits[logits_mask]
+<                 selected_candidate_len = batch_candidate_len[logits_mask]
+<                 selected_road_label = batch_road_label[logits_mask]
+< 
+<                 candidate_mask = torch.arange(selected_logits.size(1), dtype=torch.int64, device=device).unsqueeze(0) < selected_candidate_len.unsqueeze(1)
+<                 masked_selected_logits = selected_logits.masked_fill(~candidate_mask, float('-inf'))
+< 
+<                 loss_next_step = F.cross_entropy(masked_selected_logits, selected_road_label)
+< 
+<                 selected_time_pred = time_pred[logits_mask][torch.arange(time_pred[logits_mask].size(0)), selected_road_label]
+<                 selected_time_pred = selected_time_pred * timestamp_label_array_log1p_std + timestamp_label_array_log1p_mean
+<                 selected_timestamp_label = batch_timestamp_label[logits_mask]
+<                 selected_timestamp_label = selected_timestamp_label * timestamp_label_array_log1p_std + timestamp_label_array_log1p_mean
+< 
+<                 loss_time_pred = torch.mean(torch.abs(selected_time_pred - selected_timestamp_label) / torch.clamp(selected_timestamp_label, min=1.0))
+< 
+<                 loss = loss_next_step + loss_time_pred
+< 
+<             scaler.scale(loss).backward()
+---
+>             # ACCUM: memory-only change. The batch is split into ACCUM chunks of trajectories; each chunk's per-step
+>             # losses are summed and divided by the number of valid steps of the WHOLE batch, so the accumulated
+>             # gradient equals the official per-batch mean-loss gradient (dropout = 0, no batch norm, rows independent).
+>             batch = (batch_trace_road_id, batch_temporal_info, batch_trace_distance_mat, batch_trace_time_interval_mat, batch_trace_len, batch_destination_road_id, batch_candidate_road_id, batch_metric_dis, batch_metric_angle, batch_candidate_len, batch_road_label, batch_timestamp_label)
+>             if not accum_checked:
+>                 accum_check(model, batch, device)
+>                 accum_checked = True
+>             n_total = batch_trace_len.sum()
+>             loss_next_step_sum, loss_time_pred_sum = 0.0, 0.0
+>             for rows in torch.arange(batch_trace_len.size(0), device=device).tensor_split(ACCUM):
+>                 with torch.cuda.amp.autocast():
+>                     model.setup_road_network_features()
+>                     l_next, l_time = chunk_loss_sums(model, [t[rows] for t in batch], device)
+>                     loss = (l_next + l_time) / n_total
+>                 scaler.scale(loss).backward()
+>                 loss_next_step_sum += l_next.detach()
+>                 loss_time_pred_sum += l_time.detach()
+>             loss_next_step = loss_next_step_sum / n_total
+>             loss_time_pred = loss_time_pred_sum / n_total
+>             loss = loss_next_step + loss_time_pred

@@ -1,0 +1,395 @@
+{
+  "xian": {
+    "n": 100000,
+    "methods": {
+      "LEN": {
+        "Distance": 0.00397,
+        "Radius": 0.00078,
+        "LocFreq": 0.05322,
+        "top1_length": 0.83806
+      },
+      "zeroshot_logit": {
+        "Distance": 0.00349,
+        "Radius": 0.00044,
+        "LocFreq": 0.02991,
+        "top1_length": 0.84839
+      },
+      "incity_logit": {
+        "Distance": 0.00322,
+        "Radius": 0.00037,
+        "LocFreq": 0.03057,
+        "top1_length": 0.84974
+      },
+      "incity_gbdt": {
+        "Distance": 0.00326,
+        "Radius": 0.00026,
+        "LocFreq": 0.01975,
+        "top1_length": 0.87663
+      },
+      "incity_od_history": {
+        "Distance": 0.00144,
+        "Radius": 0.00016,
+        "LocFreq": 0.00445,
+        "top1_length": 0.88819
+      },
+      "oracle6": {
+        "Distance": 0.00245,
+        "Radius": 0.00011,
+        "LocFreq": 0.00976,
+        "top1_length": 0.93198
+      },
+      "GTG_from_CD": {
+        "Distance": 0.00362,
+        "Radius": 0.00054,
+        "LocFreq": 0.05122,
+        "top1_length": 0.83165
+      },
+      "GTG_from_BJ": {
+        "Distance": 0.0037,
+        "Radius": 0.00067,
+        "LocFreq": 0.04172,
+        "top1_length": 0.83094
+      },
+      "ground_truth": {
+        "Distance": 0.0,
+        "Radius": 0.0,
+        "LocFreq": 0.0
+      }
+    },
+    "kendall_tau_vs_f1": {
+      "Distance": 0.714,
+      "Radius": 0.857,
+      "LocFreq": 0.643
+    }
+  },
+  "chengdu": {
+    "n": 100000,
+    "methods": {
+      "LEN": {
+        "Distance": 0.00454,
+        "Radius": 0.0006,
+        "LocFreq": 0.02567,
+        "top1_length": 0.861
+      },
+      "zeroshot_logit": {
+        "Distance": 0.0044,
+        "Radius": 0.00038,
+        "LocFreq": 0.01754,
+        "top1_length": 0.87148
+      },
+      "incity_logit": {
+        "Distance": 0.00438,
+        "Radius": 0.00035,
+        "LocFreq": 0.01761,
+        "top1_length": 0.87077
+      },
+      "incity_gbdt": {
+        "Distance": 0.00421,
+        "Radius": 0.00032,
+        "LocFreq": 0.0129,
+        "top1_length": 0.88883
+      },
+      "incity_od_history": {
+        "Distance": 0.0012,
+        "Radius": 6e-05,
+        "LocFreq": 0.0036,
+        "top1_length": 0.91958
+      },
+      "oracle6": {
+        "Distance": 0.00318,
+        "Radius": 0.00022,
+        "LocFreq": 0.00875,
+        "top1_length": 0.93899
+      },
+      "GTG_from_BJ": {
+        "Distance": 0.00417,
+        "Radius": 0.00026,
+        "LocFreq": 0.02279,
+        "top1_length": 0.85611
+      },
+      "GTG_from_XA": {
+        "Distance": 0.0038,
+        "Radius": 0.00023,
+        "LocFreq": 0.0252,
+        "top1_length": 0.85493
+      },
+      "ground_truth": {
+        "Distance": 0.0,
+        "Radius": 0.0,
+        "LocFreq": 0.0
+      }
+    },
+    "kendall_tau_vs_f1": {
+      "Distance": 0.214,
+      "Radius": 0.214,
+      "LocFreq": 0.786
+    }
+  },
+  "beijing": {
+    "n": 100000,
+    "methods": {
+      "LEN": {
+        "Distance": 0.00177,
+        "Radius": 0.00133,
+        "LocFreq": 0.0554,
+        "top1_length": 0.72972
+      },
+      "zeroshot_logit": {
+        "Distance": 0.0011,
+        "Radius": 0.00017,
+        "LocFreq": 0.02509,
+        "top1_length": 0.80314
+      },
+      "incity_logit": {
+        "Distance": 0.00116,
+        "Radius": 0.00015,
+        "LocFreq": 0.02358,
+        "top1_length": 0.80668
+      },
+      "incity_gbdt": {
+        "Distance": 0.00108,
+        "Radius": 0.00015,
+        "LocFreq": 0.0183,
+        "top1_length": 0.81895
+      },
+      "incity_od_history": {
+        "Distance": 0.00085,
+        "Radius": 0.0001,
+        "LocFreq": 0.00655,
+        "top1_length": 0.83599
+      },
+      "oracle6": {
+        "Distance": 0.00085,
+        "Radius": 6e-05,
+        "LocFreq": 0.00486,
+        "top1_length": 0.91718
+      },
+      "GTG_from_XA": {
+        "Distance": 0.00124,
+        "Radius": 0.00047,
+        "LocFreq": 0.04899,
+        "top1_length": 0.73426
+      },
+      "GTG_from_CD": {
+        "Distance": 0.00118,
+        "Radius": 0.00024,
+        "LocFreq": 0.04153,
+        "top1_length": 0.75671
+      },
+      "ground_truth": {
+        "Distance": 0.0,
+        "Radius": 0.0,
+        "LocFreq": 0.0
+      }
+    },
+    "kendall_tau_vs_f1": {
+      "Distance": 0.909,
+      "Radius": 0.982,
+      "LocFreq": 1.0
+    }
+  },
+  "porto": {
+    "n": 100000,
+    "methods": {
+      "LEN": {
+        "Distance": 0.01642,
+        "Radius": 0.00609,
+        "LocFreq": 0.05885,
+        "top1_length": 0.61703
+      },
+      "zeroshot_logit": {
+        "Distance": 0.01195,
+        "Radius": 0.0017,
+        "LocFreq": 0.03884,
+        "top1_length": 0.64997
+      },
+      "incity_logit": {
+        "Distance": 0.00984,
+        "Radius": 0.00142,
+        "LocFreq": 0.03878,
+        "top1_length": 0.65464
+      },
+      "incity_gbdt": {
+        "Distance": 0.00983,
+        "Radius": 0.00125,
+        "LocFreq": 0.02961,
+        "top1_length": 0.68045
+      },
+      "incity_od_history": {
+        "Distance": 0.0049,
+        "Radius": 0.00053,
+        "LocFreq": 0.00924,
+        "top1_length": 0.72274
+      },
+      "oracle6": {
+        "Distance": 0.00778,
+        "Radius": 0.00107,
+        "LocFreq": 0.02137,
+        "top1_length": 0.80338
+      },
+      "ground_truth": {
+        "Distance": 0.0,
+        "Radius": 0.0,
+        "LocFreq": 0.0
+      }
+    },
+    "kendall_tau_vs_f1": {
+      "Distance": 0.867,
+      "Radius": 0.867,
+      "LocFreq": 0.867
+    },
+    "hoser_10k": {
+      "methods": {
+        "LEN": {
+          "Distance": 0.02609,
+          "Radius": 0.00678,
+          "LocFreq": 0.06108,
+          "top1_length": 0.61481
+        },
+        "zeroshot_logit": {
+          "Distance": 0.02106,
+          "Radius": 0.00231,
+          "LocFreq": 0.04075,
+          "top1_length": 0.64875
+        },
+        "incity_logit": {
+          "Distance": 0.01966,
+          "Radius": 0.00183,
+          "LocFreq": 0.0415,
+          "top1_length": 0.65093
+        },
+        "incity_gbdt": {
+          "Distance": 0.01941,
+          "Radius": 0.00161,
+          "LocFreq": 0.03236,
+          "top1_length": 0.67794
+        },
+        "incity_od_history": {
+          "Distance": 0.01433,
+          "Radius": 0.00092,
+          "LocFreq": 0.01154,
+          "top1_length": 0.71909
+        },
+        "oracle6": {
+          "Distance": 0.01689,
+          "Radius": 0.00162,
+          "LocFreq": 0.02405,
+          "top1_length": 0.80228
+        },
+        "HOSER": {
+          "Distance": 0.01169,
+          "Radius": 0.00088,
+          "LocFreq": 0.00765,
+          "top1_length": 0.76981
+        }
+      },
+      "kendall_tau_vs_f1": {
+        "Distance": 0.81,
+        "Radius": 0.714,
+        "LocFreq": 0.714
+      }
+    }
+  },
+  "sanfrancisco": {
+    "n": 58605,
+    "methods": {
+      "LEN": {
+        "Distance": 0.00748,
+        "Radius": 0.00239,
+        "LocFreq": 0.07944,
+        "top1_length": 0.46265
+      },
+      "zeroshot_logit": {
+        "Distance": 0.00531,
+        "Radius": 0.0013,
+        "LocFreq": 0.09314,
+        "top1_length": 0.50807
+      },
+      "incity_logit": {
+        "Distance": 0.00585,
+        "Radius": 0.0014,
+        "LocFreq": 0.06678,
+        "top1_length": 0.51257
+      },
+      "incity_gbdt": {
+        "Distance": 0.00595,
+        "Radius": 0.00155,
+        "LocFreq": 0.06027,
+        "top1_length": 0.52398
+      },
+      "incity_od_history": {
+        "Distance": 0.00477,
+        "Radius": 0.00111,
+        "LocFreq": 0.07207,
+        "top1_length": 0.52193
+      },
+      "oracle6": {
+        "Distance": 0.00421,
+        "Radius": 0.00092,
+        "LocFreq": 0.02842,
+        "top1_length": 0.68176
+      },
+      "ground_truth": {
+        "Distance": 0.0,
+        "Radius": 0.0,
+        "LocFreq": 0.0
+      }
+    },
+    "kendall_tau_vs_f1": {
+      "Distance": 0.467,
+      "Radius": 0.467,
+      "LocFreq": 0.733
+    },
+    "hoser_10k": {
+      "methods": {
+        "LEN": {
+          "Distance": 0.01503,
+          "Radius": 0.00288,
+          "LocFreq": 0.08503,
+          "top1_length": 0.46472
+        },
+        "zeroshot_logit": {
+          "Distance": 0.012,
+          "Radius": 0.00198,
+          "LocFreq": 0.10123,
+          "top1_length": 0.50752
+        },
+        "incity_logit": {
+          "Distance": 0.01271,
+          "Radius": 0.00209,
+          "LocFreq": 0.07345,
+          "top1_length": 0.5138
+        },
+        "incity_gbdt": {
+          "Distance": 0.01302,
+          "Radius": 0.00224,
+          "LocFreq": 0.06698,
+          "top1_length": 0.52262
+        },
+        "incity_od_history": {
+          "Distance": 0.01153,
+          "Radius": 0.00172,
+          "LocFreq": 0.08146,
+          "top1_length": 0.52127
+        },
+        "oracle6": {
+          "Distance": 0.01145,
+          "Radius": 0.00152,
+          "LocFreq": 0.03469,
+          "top1_length": 0.67952
+        },
+        "HOSER": {
+          "Distance": 0.0109,
+          "Radius": 0.00139,
+          "LocFreq": 0.01728,
+          "top1_length": 0.62025
+        }
+      },
+      "kendall_tau_vs_f1": {
+        "Distance": 0.524,
+        "Radius": 0.524,
+        "LocFreq": 0.714
+      }
+    }
+  }
+}

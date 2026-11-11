@@ -1,0 +1,13 @@
+{
+  "city": "beijing",
+  "workers": 10,
+  "n_test": 100000,
+  "candidates_s": 225.8,
+  "fit_logit_s": 7.1,
+  "predict_logit_s": 0.02,
+  "fit_gbdt_s": 3.6,
+  "predict_gbdt_s": 0.7,
+  "odhist_build_s": 8.7,
+  "n_unique_candidates": 402589,
+  "mean_candidates_per_od": 4.03
+}

@@ -1,0 +1,85 @@
+{
+  "city": "porto",
+  "N_links": 11024,
+  "N_edges": 25991,
+  "logspace_vs_exact_max_abs_err": [
+    1.0629719326971099e-10,
+    9.345058060716838e-11
+  ],
+  "incity_fit": {
+    "sec": 2237.6,
+    "success": false,
+    "nit": 5,
+    "message": "ABNORMAL_TERMINATION_IN_LNSRCH",
+    "beta": [
+      -0.9603,
+      0.1956,
+      -0.4265,
+      -1.0073,
+      -1.8884
+    ],
+    "ll_trace": [
+      -13.1834,
+      -10.517,
+      -9.8874,
+      -9.6296,
+      -9.6295,
+      -9.519,
+      -9.519,
+      -9.519,
+      -9.5188,
+      -9.0854,
+      -9.0854,
+      -9.0854,
+      -9.0854,
+      -9.0854,
+      -9.0854
+    ]
+  },
+  "incity_transfer_link_const_shift": 0.0,
+  "incity_eval": {
+    "exists": true,
+    "test_ll_per_trip": -9.2191,
+    "top1_count": 0.5902,
+    "top1_length": 0.6053,
+    "flow_nmae": 0.4981
+  },
+  "zeroshot_fit": {
+    "sec": 60.4,
+    "success": true,
+    "nit": 24,
+    "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+    "beta": [
+      -1.2782,
+      0.0873,
+      -0.3399,
+      -1.912,
+      -1.0506
+    ],
+    "ll_trace": [
+      -2.6276,
+      -2.1023,
+      -2.0815,
+      -2.0813,
+      -2.0813,
+      -2.0813,
+      -2.0813
+    ]
+  },
+  "zeroshot_transfer_link_const_shift": 0.0,
+  "zeroshot_eval": {
+    "exists": true,
+    "test_ll_per_trip": -8.9981,
+    "top1_count": 0.6066,
+    "top1_length": 0.6206,
+    "flow_nmae": 0.4498
+  },
+  "map6_incity_same10k": {
+    "top1_count": 0.6416,
+    "flow_nmae": 0.3697
+  },
+  "map6_zeroshot_same10k": {
+    "top1_count": 0.6301,
+    "flow_nmae": 0.3722
+  }
+}

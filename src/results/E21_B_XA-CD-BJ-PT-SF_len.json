@@ -1,0 +1,1180 @@
+{
+ "runs": {
+  "CD->XA/main": {
+   "tag": "CD->XA/main",
+   "n": 100000,
+   "missing": 0,
+   "f1": {
+    "gen": 0.831653,
+    "len": 0.838056,
+    "logit": 0.847778
+   },
+   "gen_eq_len": 0.70994,
+   "gen_in_map6": 0.83485,
+   "logit_eq_len": 0.75119,
+   "gen_eq_logit": 0.76246,
+   "gen_vs_len": {
+    "gap": -0.006403,
+    "differ": 0.29006,
+    "cond_gain": -0.022075,
+    "abs_cond": 0.307231,
+    "a_better": 0.448976,
+    "b_better": 0.551024,
+    "identity_err": 0.0
+   },
+   "logit_vs_len": {
+    "gap": 0.009722,
+    "differ": 0.24881,
+    "cond_gain": 0.039073,
+    "abs_cond": 0.319281,
+    "a_better": 0.53358,
+    "b_better": 0.46642,
+    "identity_err": 0.0
+   },
+   "logit_vs_gen": {
+    "gap": 0.016125,
+    "differ": 0.23754,
+    "cond_gain": 0.067883,
+    "abs_cond": 0.30554,
+    "a_better": 0.55397,
+    "b_better": 0.44603,
+    "identity_err": 0.0
+   },
+   "tail_f1_lt_0.5": {
+    "gen": 0.1643,
+    "len": 0.15583,
+    "logit": 0.14494
+   },
+   "tail_f1_lt_0.3": {
+    "gen": 0.0803,
+    "len": 0.06786,
+    "logit": 0.06702
+   },
+   "cells": {
+    "gen_len&log_len": {
+     "share": 0.66415,
+     "contrib": 0.0,
+     "mean_diff": 0.0
+    },
+    "gen_len&log_dev": {
+     "share": 0.04579,
+     "contrib": -0.003256,
+     "mean_diff": -0.071107
+    },
+    "gen_dev&log_len": {
+     "share": 0.08704,
+     "contrib": 0.008023,
+     "mean_diff": 0.09218
+    },
+    "gen_dev&log_dev": {
+     "share": 0.20302,
+     "contrib": 0.011358,
+     "mean_diff": 0.055943
+    }
+   },
+   "dev_in_map6": {
+    "share": 0.12491,
+    "gain_over_len": 0.068585,
+    "contrib_over_len": 0.008567
+   },
+   "dev_out_map6": {
+    "share": 0.16515,
+    "gain_over_len": -0.090646,
+    "contrib_over_len": -0.01497
+   },
+   "attrs": {
+    "detour_mean": {
+     "gt": 1.064417,
+     "gen": 1.010641,
+     "logit": 1.004572
+    },
+    "major_share": {
+     "gt": 0.84998,
+     "gen": 0.842172,
+     "logit": 0.910134,
+     "len": 0.840133
+    }
+   },
+   "detour_corr_on_dev": 0.060217,
+   "detour_corr_on_logit_dev": 0.071622
+  },
+  "BJ->XA/main": {
+   "tag": "BJ->XA/main",
+   "n": 100000,
+   "missing": 0,
+   "f1": {
+    "gen": 0.830938,
+    "len": 0.838056,
+    "logit": 0.850727
+   },
+   "gen_eq_len": 0.68654,
+   "gen_in_map6": 0.82413,
+   "logit_eq_len": 0.77671,
+   "gen_eq_logit": 0.72447,
+   "gen_vs_len": {
+    "gap": -0.007118,
+    "differ": 0.31346,
+    "cond_gain": -0.022709,
+    "abs_cond": 0.274796,
+    "a_better": 0.451254,
+    "b_better": 0.548746,
+    "identity_err": 0.0
+   },
+   "logit_vs_len": {
+    "gap": 0.012671,
+    "differ": 0.22329,
+    "cond_gain": 0.056745,
+    "abs_cond": 0.310213,
+    "a_better": 0.557033,
+    "b_better": 0.442967,
+    "identity_err": 0.0
+   },
+   "logit_vs_gen": {
+    "gap": 0.019789,
+    "differ": 0.27553,
+    "cond_gain": 0.071822,
+    "abs_cond": 0.29757,
+    "a_better": 0.608536,
+    "b_better": 0.391464,
+    "identity_err": 0.0
+   },
+   "tail_f1_lt_0.5": {
+    "gen": 0.15907,
+    "len": 0.15583,
+    "logit": 0.14493
+   },
+   "tail_f1_lt_0.3": {
+    "gen": 0.07003,
+    "len": 0.06786,
+    "logit": 0.06506
+   },
+   "cells": {
+    "gen_len&log_len": {
+     "share": 0.6503,
+     "contrib": 0.0,
+     "mean_diff": 0.0
+    },
+    "gen_len&log_dev": {
+     "share": 0.03624,
+     "contrib": -0.002316,
+     "mean_diff": -0.063912
+    },
+    "gen_dev&log_len": {
+     "share": 0.12641,
+     "contrib": 0.015227,
+     "mean_diff": 0.120457
+    },
+    "gen_dev&log_dev": {
+     "share": 0.18705,
+     "contrib": 0.006878,
+     "mean_diff": 0.036773
+    }
+   },
+   "dev_in_map6": {
+    "share": 0.13759,
+    "gain_over_len": 0.026873,
+    "contrib_over_len": 0.003698
+   },
+   "dev_out_map6": {
+    "share": 0.17587,
+    "gain_over_len": -0.0615,
+    "contrib_over_len": -0.010816
+   },
+   "attrs": {
+    "detour_mean": {
+     "gt": 1.064417,
+     "gen": 1.005153,
+     "logit": 1.002934
+    },
+    "major_share": {
+     "gt": 0.84998,
+     "gen": 0.85885,
+     "logit": 0.886148,
+     "len": 0.840133
+    }
+   },
+   "detour_corr_on_dev": 0.075695,
+   "detour_corr_on_logit_dev": 0.032904
+  },
+  "BJ->CD/main": {
+   "tag": "BJ->CD/main",
+   "n": 100000,
+   "missing": 0,
+   "f1": {
+    "gen": 0.85611,
+    "len": 0.861001,
+    "logit": 0.869252
+   },
+   "gen_eq_len": 0.72324,
+   "gen_in_map6": 0.84648,
+   "logit_eq_len": 0.86346,
+   "gen_eq_logit": 0.75779,
+   "gen_vs_len": {
+    "gap": -0.004891,
+    "differ": 0.27676,
+    "cond_gain": -0.017673,
+    "abs_cond": 0.272342,
+    "a_better": 0.469287,
+    "b_better": 0.530568,
+    "identity_err": 0.0
+   },
+   "logit_vs_len": {
+    "gap": 0.008251,
+    "differ": 0.13654,
+    "cond_gain": 0.060426,
+    "abs_cond": 0.282226,
+    "a_better": 0.578585,
+    "b_better": 0.421415,
+    "identity_err": 0.0
+   },
+   "logit_vs_gen": {
+    "gap": 0.013142,
+    "differ": 0.24221,
+    "cond_gain": 0.054258,
+    "abs_cond": 0.265462,
+    "a_better": 0.572437,
+    "b_better": 0.427398,
+    "identity_err": 0.0
+   },
+   "tail_f1_lt_0.5": {
+    "gen": 0.12437,
+    "len": 0.11098,
+    "logit": 0.09989
+   },
+   "tail_f1_lt_0.3": {
+    "gen": 0.0505,
+    "len": 0.03665,
+    "logit": 0.0376
+   },
+   "cells": {
+    "gen_len&log_len": {
+     "share": 0.70903,
+     "contrib": 0.0,
+     "mean_diff": 0.0
+    },
+    "gen_len&log_dev": {
+     "share": 0.01421,
+     "contrib": 0.000575,
+     "mean_diff": 0.040442
+    },
+    "gen_dev&log_len": {
+     "share": 0.15443,
+     "contrib": 0.008079,
+     "mean_diff": 0.052316
+    },
+    "gen_dev&log_dev": {
+     "share": 0.12233,
+     "contrib": 0.004488,
+     "mean_diff": 0.036689
+    }
+   },
+   "dev_in_map6": {
+    "share": 0.12324,
+    "gain_over_len": -0.086168,
+    "contrib_over_len": -0.010619
+   },
+   "dev_out_map6": {
+    "share": 0.15352,
+    "gain_over_len": 0.037312,
+    "contrib_over_len": 0.005728
+   },
+   "attrs": {
+    "detour_mean": {
+     "gt": 1.071416,
+     "gen": 1.004653,
+     "logit": 1.001688
+    },
+    "major_share": {
+     "gt": 0.889965,
+     "gen": 0.91382,
+     "logit": 0.912901,
+     "len": 0.89657
+    }
+   },
+   "detour_corr_on_dev": 0.143559,
+   "detour_corr_on_logit_dev": 0.239412
+  },
+  "XA->BJ/main": {
+   "tag": "XA->BJ/main",
+   "n": 100000,
+   "missing": 0,
+   "f1": {
+    "gen": 0.734256,
+    "len": 0.729721,
+    "logit": 0.804134
+   },
+   "gen_eq_len": 0.35989,
+   "gen_in_map6": 0.56398,
+   "logit_eq_len": 0.46165,
+   "gen_eq_logit": 0.45327,
+   "gen_vs_len": {
+    "gap": 0.004536,
+    "differ": 0.64011,
+    "cond_gain": 0.007086,
+    "abs_cond": 0.296402,
+    "a_better": 0.461015,
+    "b_better": 0.53897,
+    "identity_err": 0.0
+   },
+   "logit_vs_len": {
+    "gap": 0.074413,
+    "differ": 0.53835,
+    "cond_gain": 0.138225,
+    "abs_cond": 0.344468,
+    "a_better": 0.611795,
+    "b_better": 0.388205,
+    "identity_err": 0.0
+   },
+   "logit_vs_gen": {
+    "gap": 0.069878,
+    "differ": 0.54673,
+    "cond_gain": 0.12781,
+    "abs_cond": 0.268598,
+    "a_better": 0.694621,
+    "b_better": 0.305361,
+    "identity_err": 0.0
+   },
+   "tail_f1_lt_0.5": {
+    "gen": 0.24377,
+    "len": 0.26848,
+    "logit": 0.17237
+   },
+   "tail_f1_lt_0.3": {
+    "gen": 0.12606,
+    "len": 0.14554,
+    "logit": 0.08729
+   },
+   "cells": {
+    "gen_len&log_len": {
+     "share": 0.31838,
+     "contrib": 0.0,
+     "mean_diff": 0.0
+    },
+    "gen_len&log_dev": {
+     "share": 0.04151,
+     "contrib": -0.001885,
+     "mean_diff": -0.045408
+    },
+    "gen_dev&log_len": {
+     "share": 0.14327,
+     "contrib": 0.028103,
+     "mean_diff": 0.196156
+    },
+    "gen_dev&log_dev": {
+     "share": 0.49684,
+     "contrib": 0.043659,
+     "mean_diff": 0.087874
+    }
+   },
+   "dev_in_map6": {
+    "share": 0.20409,
+    "gain_over_len": 0.048292,
+    "contrib_over_len": 0.009856
+   },
+   "dev_out_map6": {
+    "share": 0.43602,
+    "gain_over_len": -0.012202,
+    "contrib_over_len": -0.00532
+   },
+   "attrs": {
+    "detour_mean": {
+     "gt": 1.043029,
+     "gen": 1.032599,
+     "logit": 1.016364
+    },
+    "major_share": {
+     "gt": 0.711997,
+     "gen": 0.710866,
+     "logit": 0.814224,
+     "len": 0.565595
+    }
+   },
+   "detour_corr_on_dev": 0.043526,
+   "detour_corr_on_logit_dev": 0.205853
+  },
+  "XA->CD/main": {
+   "tag": "XA->CD/main",
+   "n": 100000,
+   "missing": 0,
+   "f1": {
+    "gen": 0.854933,
+    "len": 0.861001,
+    "logit": 0.867069
+   },
+   "gen_eq_len": 0.70729,
+   "gen_in_map6": 0.82179,
+   "logit_eq_len": 0.83668,
+   "gen_eq_logit": 0.7715,
+   "gen_vs_len": {
+    "gap": -0.006068,
+    "differ": 0.29271,
+    "cond_gain": -0.020732,
+    "abs_cond": 0.274877,
+    "a_better": 0.485395,
+    "b_better": 0.514502,
+    "identity_err": 0.0
+   },
+   "logit_vs_len": {
+    "gap": 0.006068,
+    "differ": 0.16332,
+    "cond_gain": 0.037153,
+    "abs_cond": 0.314061,
+    "a_better": 0.548739,
+    "b_better": 0.451261,
+    "identity_err": 0.0
+   },
+   "logit_vs_gen": {
+    "gap": 0.012136,
+    "differ": 0.2285,
+    "cond_gain": 0.053113,
+    "abs_cond": 0.268339,
+    "a_better": 0.560306,
+    "b_better": 0.439387,
+    "identity_err": 0.0
+   },
+   "tail_f1_lt_0.5": {
+    "gen": 0.12016,
+    "len": 0.11098,
+    "logit": 0.10575
+   },
+   "tail_f1_lt_0.3": {
+    "gen": 0.04945,
+    "len": 0.03665,
+    "logit": 0.04103
+   },
+   "cells": {
+    "gen_len&log_len": {
+     "share": 0.69942,
+     "contrib": 0.0,
+     "mean_diff": 0.0
+    },
+    "gen_len&log_dev": {
+     "share": 0.00787,
+     "contrib": -7.3e-05,
+     "mean_diff": -0.009287
+    },
+    "gen_dev&log_len": {
+     "share": 0.13726,
+     "contrib": 0.007942,
+     "mean_diff": 0.05786
+    },
+    "gen_dev&log_dev": {
+     "share": 0.15545,
+     "contrib": 0.004267,
+     "mean_diff": 0.027452
+    }
+   },
+   "dev_in_map6": {
+    "share": 0.1145,
+    "gain_over_len": -0.064192,
+    "contrib_over_len": -0.00735
+   },
+   "dev_out_map6": {
+    "share": 0.17821,
+    "gain_over_len": 0.007191,
+    "contrib_over_len": 0.001282
+   },
+   "attrs": {
+    "detour_mean": {
+     "gt": 1.071416,
+     "gen": 1.009785,
+     "logit": 1.005053
+    },
+    "major_share": {
+     "gt": 0.889965,
+     "gen": 0.920763,
+     "logit": 0.922529,
+     "len": 0.89657
+    }
+   },
+   "detour_corr_on_dev": 0.178985,
+   "detour_corr_on_logit_dev": 0.212542
+  },
+  "CD->BJ/main": {
+   "tag": "CD->BJ/main",
+   "n": 100000,
+   "missing": 0,
+   "f1": {
+    "gen": 0.756714,
+    "len": 0.729721,
+    "logit": 0.799986
+   },
+   "gen_eq_len": 0.39145,
+   "gen_in_map6": 0.60781,
+   "logit_eq_len": 0.45836,
+   "gen_eq_logit": 0.48711,
+   "gen_vs_len": {
+    "gap": 0.026994,
+    "differ": 0.60855,
+    "cond_gain": 0.044358,
+    "abs_cond": 0.303963,
+    "a_better": 0.496377,
+    "b_better": 0.503623,
+    "identity_err": 0.0
+   },
+   "logit_vs_len": {
+    "gap": 0.070265,
+    "differ": 0.54164,
+    "cond_gain": 0.129727,
+    "abs_cond": 0.346186,
+    "a_better": 0.599956,
+    "b_better": 0.400044,
+    "identity_err": 0.0
+   },
+   "logit_vs_gen": {
+    "gap": 0.043272,
+    "differ": 0.51289,
+    "cond_gain": 0.084368,
+    "abs_cond": 0.253815,
+    "a_better": 0.649048,
+    "b_better": 0.350952,
+    "identity_err": 0.0
+   },
+   "tail_f1_lt_0.5": {
+    "gen": 0.21712,
+    "len": 0.26848,
+    "logit": 0.17795
+   },
+   "tail_f1_lt_0.3": {
+    "gen": 0.10811,
+    "len": 0.14554,
+    "logit": 0.09184
+   },
+   "cells": {
+    "gen_len&log_len": {
+     "share": 0.33758,
+     "contrib": 0.0,
+     "mean_diff": 0.0
+    },
+    "gen_len&log_dev": {
+     "share": 0.05387,
+     "contrib": -0.00249,
+     "mean_diff": -0.046219
+    },
+    "gen_dev&log_len": {
+     "share": 0.12078,
+     "contrib": 0.018873,
+     "mean_diff": 0.156259
+    },
+    "gen_dev&log_dev": {
+     "share": 0.48777,
+     "contrib": 0.026888,
+     "mean_diff": 0.055125
+    }
+   },
+   "dev_in_map6": {
+    "share": 0.21636,
+    "gain_over_len": 0.079009,
+    "contrib_over_len": 0.017094
+   },
+   "dev_out_map6": {
+    "share": 0.39219,
+    "gain_over_len": 0.025242,
+    "contrib_over_len": 0.009899
+   },
+   "attrs": {
+    "detour_mean": {
+     "gt": 1.043029,
+     "gen": 1.023069,
+     "logit": 1.016637
+    },
+    "major_share": {
+     "gt": 0.711997,
+     "gen": 0.714125,
+     "logit": 0.81746,
+     "len": 0.565595
+    }
+   },
+   "detour_corr_on_dev": 0.129871,
+   "detour_corr_on_logit_dev": 0.209682
+  },
+  "CD->XA/exp_102": {
+   "tag": "CD->XA/exp_102",
+   "n": 100000,
+   "missing": 0,
+   "f1": {
+    "gen": 0.811448,
+    "len": 0.838056,
+    "logit": 0.847778
+   },
+   "gen_eq_len": 0.64243,
+   "gen_in_map6": 0.80895,
+   "logit_eq_len": 0.75119,
+   "gen_eq_logit": 0.72034,
+   "gen_vs_len": {
+    "gap": -0.026608,
+    "differ": 0.35757,
+    "cond_gain": -0.074413,
+    "abs_cond": 0.317641,
+    "a_better": 0.40613,
+    "b_better": 0.59387,
+    "identity_err": 0.0
+   },
+   "logit_vs_len": {
+    "gap": 0.009722,
+    "differ": 0.24881,
+    "cond_gain": 0.039073,
+    "abs_cond": 0.319281,
+    "a_better": 0.53358,
+    "b_better": 0.46642,
+    "identity_err": 0.0
+   },
+   "logit_vs_gen": {
+    "gap": 0.03633,
+    "differ": 0.27966,
+    "cond_gain": 0.129907,
+    "abs_cond": 0.321861,
+    "a_better": 0.639777,
+    "b_better": 0.360223,
+    "identity_err": 0.0
+   },
+   "tail_f1_lt_0.5": {
+    "gen": 0.18171,
+    "len": 0.15583,
+    "logit": 0.14494
+   },
+   "tail_f1_lt_0.3": {
+    "gen": 0.09672,
+    "len": 0.06786,
+    "logit": 0.06702
+   },
+   "cells": {
+    "gen_len&log_len": {
+     "share": 0.61911,
+     "contrib": 0.0,
+     "mean_diff": 0.0
+    },
+    "gen_len&log_dev": {
+     "share": 0.02332,
+     "contrib": -0.001256,
+     "mean_diff": -0.053871
+    },
+    "gen_dev&log_len": {
+     "share": 0.13208,
+     "contrib": 0.027096,
+     "mean_diff": 0.205146
+    },
+    "gen_dev&log_dev": {
+     "share": 0.22549,
+     "contrib": 0.01049,
+     "mean_diff": 0.046522
+    }
+   },
+   "dev_in_map6": {
+    "share": 0.16652,
+    "gain_over_len": -0.0418,
+    "contrib_over_len": -0.006961
+   },
+   "dev_out_map6": {
+    "share": 0.19105,
+    "gain_over_len": -0.102839,
+    "contrib_over_len": -0.019647
+   },
+   "attrs": {
+    "detour_mean": {
+     "gt": 1.064417,
+     "gen": 1.036907,
+     "logit": 1.004572
+    },
+    "major_share": {
+     "gt": 0.84998,
+     "gen": 0.865083,
+     "logit": 0.910134,
+     "len": 0.840133
+    }
+   },
+   "detour_corr_on_dev": -0.068166,
+   "detour_corr_on_logit_dev": 0.071622
+  },
+  "XA->BJ/exp_102": {
+   "tag": "XA->BJ/exp_102",
+   "n": 100000,
+   "missing": 0,
+   "f1": {
+    "gen": 0.773246,
+    "len": 0.729721,
+    "logit": 0.804134
+   },
+   "gen_eq_len": 0.41134,
+   "gen_in_map6": 0.69019,
+   "logit_eq_len": 0.46165,
+   "gen_eq_logit": 0.60921,
+   "gen_vs_len": {
+    "gap": 0.043526,
+    "differ": 0.58866,
+    "cond_gain": 0.07394,
+    "abs_cond": 0.315726,
+    "a_better": 0.534094,
+    "b_better": 0.465906,
+    "identity_err": 0.0
+   },
+   "logit_vs_len": {
+    "gap": 0.074413,
+    "differ": 0.53835,
+    "cond_gain": 0.138225,
+    "abs_cond": 0.344468,
+    "a_better": 0.611795,
+    "b_better": 0.388205,
+    "identity_err": 0.0
+   },
+   "logit_vs_gen": {
+    "gap": 0.030888,
+    "differ": 0.39079,
+    "cond_gain": 0.079039,
+    "abs_cond": 0.236014,
+    "a_better": 0.636506,
+    "b_better": 0.363494,
+    "identity_err": 0.0
+   },
+   "tail_f1_lt_0.5": {
+    "gen": 0.20374,
+    "len": 0.26848,
+    "logit": 0.17237
+   },
+   "tail_f1_lt_0.3": {
+    "gen": 0.1042,
+    "len": 0.14554,
+    "logit": 0.08729
+   },
+   "cells": {
+    "gen_len&log_len": {
+     "share": 0.3752,
+     "contrib": 0.0,
+     "mean_diff": 0.0
+    },
+    "gen_len&log_dev": {
+     "share": 0.03614,
+     "contrib": -0.001562,
+     "mean_diff": -0.043213
+    },
+    "gen_dev&log_len": {
+     "share": 0.08645,
+     "contrib": 0.011928,
+     "mean_diff": 0.137972
+    },
+    "gen_dev&log_dev": {
+     "share": 0.50221,
+     "contrib": 0.020522,
+     "mean_diff": 0.040863
+    }
+   },
+   "dev_in_map6": {
+    "share": 0.27885,
+    "gain_over_len": 0.129488,
+    "contrib_over_len": 0.036108
+   },
+   "dev_out_map6": {
+    "share": 0.30981,
+    "gain_over_len": 0.023943,
+    "contrib_over_len": 0.007418
+   },
+   "attrs": {
+    "detour_mean": {
+     "gt": 1.043029,
+     "gen": 1.023215,
+     "logit": 1.016364
+    },
+    "major_share": {
+     "gt": 0.711997,
+     "gen": 0.767754,
+     "logit": 0.814224,
+     "len": 0.565595
+    }
+   },
+   "detour_corr_on_dev": 0.075805,
+   "detour_corr_on_logit_dev": 0.205853
+  },
+  "CD->XA/exp_103": {
+   "tag": "CD->XA/exp_103",
+   "n": 100000,
+   "missing": 0,
+   "f1": {
+    "gen": 0.842775,
+    "len": 0.838056,
+    "logit": 0.847778
+   },
+   "gen_eq_len": 0.71109,
+   "gen_in_map6": 0.87277,
+   "logit_eq_len": 0.75119,
+   "gen_eq_logit": 0.80781,
+   "gen_vs_len": {
+    "gap": 0.004718,
+    "differ": 0.28891,
+    "cond_gain": 0.016332,
+    "abs_cond": 0.295283,
+    "a_better": 0.488007,
+    "b_better": 0.511993,
+    "identity_err": 0.0
+   },
+   "logit_vs_len": {
+    "gap": 0.009722,
+    "differ": 0.24881,
+    "cond_gain": 0.039073,
+    "abs_cond": 0.319281,
+    "a_better": 0.53358,
+    "b_better": 0.46642,
+    "identity_err": 0.0
+   },
+   "logit_vs_gen": {
+    "gap": 0.005003,
+    "differ": 0.19219,
+    "cond_gain": 0.026034,
+    "abs_cond": 0.29151,
+    "a_better": 0.539986,
+    "b_better": 0.460014,
+    "identity_err": 0.0
+   },
+   "tail_f1_lt_0.5": {
+    "gen": 0.14949,
+    "len": 0.15583,
+    "logit": 0.14494
+   },
+   "tail_f1_lt_0.3": {
+    "gen": 0.07079,
+    "len": 0.06786,
+    "logit": 0.06702
+   },
+   "cells": {
+    "gen_len&log_len": {
+     "share": 0.68092,
+     "contrib": 0.0,
+     "mean_diff": 0.0
+    },
+    "gen_len&log_dev": {
+     "share": 0.03017,
+     "contrib": -0.001764,
+     "mean_diff": -0.058473
+    },
+    "gen_dev&log_len": {
+     "share": 0.07027,
+     "contrib": 0.003768,
+     "mean_diff": 0.053628
+    },
+    "gen_dev&log_dev": {
+     "share": 0.21864,
+     "contrib": 0.002999,
+     "mean_diff": 0.013717
+    }
+   },
+   "dev_in_map6": {
+    "share": 0.16168,
+    "gain_over_len": 0.060684,
+    "contrib_over_len": 0.009811
+   },
+   "dev_out_map6": {
+    "share": 0.12723,
+    "gain_over_len": -0.040031,
+    "contrib_over_len": -0.005093
+   },
+   "attrs": {
+    "detour_mean": {
+     "gt": 1.064417,
+     "gen": 1.006539,
+     "logit": 1.004572
+    },
+    "major_share": {
+     "gt": 0.84998,
+     "gen": 0.888642,
+     "logit": 0.910134,
+     "len": 0.840133
+    }
+   },
+   "detour_corr_on_dev": 0.124488,
+   "detour_corr_on_logit_dev": 0.071622
+  },
+  "XA->BJ/exp_103": {
+   "tag": "XA->BJ/exp_103",
+   "n": 100000,
+   "missing": 0,
+   "f1": {
+    "gen": 0.717627,
+    "len": 0.729721,
+    "logit": 0.804134
+   },
+   "gen_eq_len": 0.37029,
+   "gen_in_map6": 0.55827,
+   "logit_eq_len": 0.46165,
+   "gen_eq_logit": 0.45727,
+   "gen_vs_len": {
+    "gap": -0.012093,
+    "differ": 0.62971,
+    "cond_gain": -0.019205,
+    "abs_cond": 0.290623,
+    "a_better": 0.429023,
+    "b_better": 0.570961,
+    "identity_err": 0.0
+   },
+   "logit_vs_len": {
+    "gap": 0.074413,
+    "differ": 0.53835,
+    "cond_gain": 0.138225,
+    "abs_cond": 0.344468,
+    "a_better": 0.611795,
+    "b_better": 0.388205,
+    "identity_err": 0.0
+   },
+   "logit_vs_gen": {
+    "gap": 0.086507,
+    "differ": 0.54273,
+    "cond_gain": 0.159392,
+    "abs_cond": 0.298356,
+    "a_better": 0.716673,
+    "b_better": 0.283308,
+    "identity_err": 0.0
+   },
+   "tail_f1_lt_0.5": {
+    "gen": 0.26646,
+    "len": 0.26848,
+    "logit": 0.17237
+   },
+   "tail_f1_lt_0.3": {
+    "gen": 0.13514,
+    "len": 0.14554,
+    "logit": 0.08729
+   },
+   "cells": {
+    "gen_len&log_len": {
+     "share": 0.3296,
+     "contrib": 0.0,
+     "mean_diff": 0.0
+    },
+    "gen_len&log_dev": {
+     "share": 0.04069,
+     "contrib": -0.000507,
+     "mean_diff": -0.012462
+    },
+    "gen_dev&log_len": {
+     "share": 0.13205,
+     "contrib": 0.02676,
+     "mean_diff": 0.202653
+    },
+    "gen_dev&log_dev": {
+     "share": 0.49766,
+     "contrib": 0.060254,
+     "mean_diff": 0.121074
+    }
+   },
+   "dev_in_map6": {
+    "share": 0.18798,
+    "gain_over_len": 0.029927,
+    "contrib_over_len": 0.005626
+   },
+   "dev_out_map6": {
+    "share": 0.44173,
+    "gain_over_len": -0.040113,
+    "contrib_over_len": -0.017719
+   },
+   "attrs": {
+    "detour_mean": {
+     "gt": 1.043029,
+     "gen": 1.036425,
+     "logit": 1.016364
+    },
+    "major_share": {
+     "gt": 0.711997,
+     "gen": 0.679997,
+     "logit": 0.814224,
+     "len": 0.565595
+    }
+   },
+   "detour_corr_on_dev": 0.029019,
+   "detour_corr_on_logit_dev": 0.205853
+  },
+  "XA->XA/incity": {
+   "tag": "XA->XA/incity",
+   "n": 100000,
+   "missing": 0,
+   "f1": {
+    "gen": 0.857832,
+    "len": 0.838056,
+    "logit": 0.849739
+   },
+   "gen_eq_len": 0.75059,
+   "gen_in_map6": 0.88,
+   "logit_eq_len": 0.74506,
+   "gen_eq_logit": 0.79289,
+   "gen_vs_len": {
+    "gap": 0.019776,
+    "differ": 0.24941,
+    "cond_gain": 0.079291,
+    "abs_cond": 0.290998,
+    "a_better": 0.562528,
+    "b_better": 0.437472,
+    "identity_err": 0.0
+   },
+   "logit_vs_len": {
+    "gap": 0.011683,
+    "differ": 0.25494,
+    "cond_gain": 0.045826,
+    "abs_cond": 0.315245,
+    "a_better": 0.548678,
+    "b_better": 0.451322,
+    "identity_err": 0.0
+   },
+   "logit_vs_gen": {
+    "gap": -0.008093,
+    "differ": 0.20711,
+    "cond_gain": -0.039075,
+    "abs_cond": 0.289922,
+    "a_better": 0.464149,
+    "b_better": 0.535851,
+    "identity_err": 0.0
+   },
+   "tail_f1_lt_0.5": {
+    "gen": 0.12954,
+    "len": 0.15583,
+    "logit": 0.14386
+   },
+   "tail_f1_lt_0.3": {
+    "gen": 0.05611,
+    "len": 0.06786,
+    "logit": 0.06486
+   },
+   "cells": {
+    "gen_len&log_len": {
+     "share": 0.68947,
+     "contrib": 0.0,
+     "mean_diff": 0.0
+    },
+    "gen_len&log_dev": {
+     "share": 0.06112,
+     "contrib": -0.00539,
+     "mean_diff": -0.08818
+    },
+    "gen_dev&log_len": {
+     "share": 0.05559,
+     "contrib": -0.002383,
+     "mean_diff": -0.042866
+    },
+    "gen_dev&log_dev": {
+     "share": 0.19382,
+     "contrib": -0.00032,
+     "mean_diff": -0.001653
+    }
+   },
+   "dev_in_map6": {
+    "share": 0.12941,
+    "gain_over_len": 0.126221,
+    "contrib_over_len": 0.016334
+   },
+   "dev_out_map6": {
+    "share": 0.12,
+    "gain_over_len": 0.02868,
+    "contrib_over_len": 0.003442
+   },
+   "attrs": {
+    "detour_mean": {
+     "gt": 1.064417,
+     "gen": 1.004941,
+     "logit": 1.004595
+    },
+    "major_share": {
+     "gt": 0.84998,
+     "gen": 0.867418,
+     "logit": 0.907253,
+     "len": 0.840133
+    }
+   },
+   "detour_corr_on_dev": 0.136215,
+   "detour_corr_on_logit_dev": 0.08136
+  },
+  "CD->CD/incity": {
+   "tag": "CD->CD/incity",
+   "n": 100000,
+   "missing": 0,
+   "f1": {
+    "gen": 0.86698,
+    "len": 0.861001,
+    "logit": 0.870767
+   },
+   "gen_eq_len": 0.76234,
+   "gen_in_map6": 0.85423,
+   "logit_eq_len": 0.85247,
+   "gen_eq_logit": 0.79271,
+   "gen_vs_len": {
+    "gap": 0.005979,
+    "differ": 0.23766,
+    "cond_gain": 0.025159,
+    "abs_cond": 0.28599,
+    "a_better": 0.540604,
+    "b_better": 0.459396,
+    "identity_err": 0.0
+   },
+   "logit_vs_len": {
+    "gap": 0.009766,
+    "differ": 0.14753,
+    "cond_gain": 0.0662,
+    "abs_cond": 0.31674,
+    "a_better": 0.583813,
+    "b_better": 0.416187,
+    "identity_err": 0.0
+   },
+   "logit_vs_gen": {
+    "gap": 0.003787,
+    "differ": 0.20729,
+    "cond_gain": 0.01827,
+    "abs_cond": 0.270543,
+    "a_better": 0.519948,
+    "b_better": 0.480004,
+    "identity_err": 0.0
+   },
+   "tail_f1_lt_0.5": {
+    "gen": 0.1065,
+    "len": 0.11098,
+    "logit": 0.09913
+   },
+   "tail_f1_lt_0.3": {
+    "gen": 0.04379,
+    "len": 0.03665,
+    "logit": 0.03799
+   },
+   "cells": {
+    "gen_len&log_len": {
+     "share": 0.73931,
+     "contrib": 0.0,
+     "mean_diff": 0.0
+    },
+    "gen_len&log_dev": {
+     "share": 0.02303,
+     "contrib": 0.001159,
+     "mean_diff": 0.05034
+    },
+    "gen_dev&log_len": {
+     "share": 0.11316,
+     "contrib": 0.000453,
+     "mean_diff": 0.004
+    },
+    "gen_dev&log_dev": {
+     "share": 0.1245,
+     "contrib": 0.002175,
+     "mean_diff": 0.017471
+    }
+   },
+   "dev_in_map6": {
+    "share": 0.09189,
+    "gain_over_len": 0.004733,
+    "contrib_over_len": 0.000435
+   },
+   "dev_out_map6": {
+    "share": 0.14577,
+    "gain_over_len": 0.038035,
+    "contrib_over_len": 0.005544
+   },
+   "attrs": {
+    "detour_mean": {
+     "gt": 1.071416,
+     "gen": 1.00769,
+     "logit": 1.004498
+    },
+    "major_share": {
+     "gt": 0.889965,
+     "gen": 0.910149,
+     "logit": 0.925035,
+     "len": 0.89657
+    }
+   },
+   "detour_corr_on_dev": 0.192828,
+   "detour_corr_on_logit_dev": 0.20646
+  }
+ }
+}

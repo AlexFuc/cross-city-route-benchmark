@@ -1,0 +1,14 @@
+{
+  "porto": {
+    "train_s": 13376.46,
+    "generate_s_10k": 1060,
+    "generate_s_per_1e5": 10600,
+    "gen_processes": 8
+  },
+  "sanfrancisco": {
+    "train_s": 7844.35,
+    "generate_s_10k": 1371,
+    "generate_s_per_1e5": 13710,
+    "gen_processes": 8
+  }
+}

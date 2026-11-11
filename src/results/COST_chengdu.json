@@ -1,0 +1,13 @@
+{
+  "city": "chengdu",
+  "workers": 10,
+  "n_test": 100000,
+  "candidates_s": 19.3,
+  "fit_logit_s": 7.7,
+  "predict_logit_s": 0.03,
+  "fit_gbdt_s": 8.9,
+  "predict_gbdt_s": 1.3,
+  "odhist_build_s": 2.2,
+  "n_unique_candidates": 346756,
+  "mean_candidates_per_od": 3.47
+}

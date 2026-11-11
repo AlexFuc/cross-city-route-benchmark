@@ -1,0 +1,26 @@
+{
+  "xian": {
+    "n": 160728,
+    "exact_shortest_share": 0.6555
+  },
+  "chengdu": {
+    "n": 250443,
+    "exact_shortest_share": 0.6298
+  },
+  "beijing": {
+    "n": 468846,
+    "exact_shortest_share": 0.4507
+  },
+  "porto": {
+    "n": 137532,
+    "exact_shortest_share": 0.22
+  },
+  "sanfrancisco": {
+    "n": 58605,
+    "exact_shortest_share": 0.1383
+  },
+  "bjhoser": {
+    "n": 179823,
+    "exact_shortest_share": 0.3228
+  }
+}

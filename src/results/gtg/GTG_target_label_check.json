@@ -1,0 +1,23 @@
+{
+  "xian": {
+    "segments": 4147,
+    "label_rows": 58016,
+    "slots": 24,
+    "samples_kept": 1968,
+    "samples_label_free": 1968
+  },
+  "chengdu": {
+    "segments": 3514,
+    "label_rows": 47749,
+    "slots": 24,
+    "samples_kept": 1680,
+    "samples_label_free": 1680
+  },
+  "beijing": {
+    "segments": 14685,
+    "label_rows": 217037,
+    "slots": 24,
+    "samples_kept": 7032,
+    "samples_label_free": 7032
+  }
+}

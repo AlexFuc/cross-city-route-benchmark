@@ -1,0 +1,76 @@
+{
+  "city": "chengdu",
+  "N_links": 3514,
+  "N_edges": 7705,
+  "logspace_vs_exact_max_abs_err": [
+    6.971845323278103e-11,
+    8.574829735152889e-11
+  ],
+  "incity_fit": {
+    "sec": 60.3,
+    "success": true,
+    "nit": 24,
+    "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+    "beta": [
+      -1.2782,
+      0.0873,
+      -0.3399,
+      -1.912,
+      -1.0506
+    ],
+    "ll_trace": [
+      -2.6276,
+      -2.1023,
+      -2.0815,
+      -2.0813,
+      -2.0813,
+      -2.0813,
+      -2.0813
+    ]
+  },
+  "incity_transfer_link_const_shift": 0.0,
+  "incity_eval": {
+    "exists": true,
+    "test_ll_per_trip": -2.1641,
+    "top1_count": 0.8664,
+    "top1_length": 0.8747,
+    "flow_nmae": 0.2378
+  },
+  "zeroshot_fit": {
+    "sec": 40.9,
+    "success": true,
+    "nit": 21,
+    "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+    "beta": [
+      -1.8887,
+      0.7715,
+      -0.1758,
+      -2.245,
+      -0.2941
+    ],
+    "ll_trace": [
+      -3.1219,
+      -2.4285,
+      -2.2127,
+      -2.2063,
+      -2.2061,
+      -2.2061
+    ]
+  },
+  "zeroshot_transfer_link_const_shift": -0.25,
+  "zeroshot_eval": {
+    "exists": true,
+    "test_ll_per_trip": -2.2523,
+    "top1_count": 0.8632,
+    "top1_length": 0.873,
+    "flow_nmae": 0.2138
+  },
+  "map6_incity_same10k": {
+    "top1_count": 0.8705,
+    "flow_nmae": 0.2094
+  },
+  "map6_zeroshot_same10k": {
+    "top1_count": 0.8541,
+    "flow_nmae": 0.2253
+  }
+}

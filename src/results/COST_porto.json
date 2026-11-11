@@ -1,0 +1,13 @@
+{
+  "city": "porto",
+  "workers": 10,
+  "n_test": 100000,
+  "candidates_s": 196.7,
+  "fit_logit_s": 7.6,
+  "predict_logit_s": 0.03,
+  "fit_gbdt_s": 10.2,
+  "predict_gbdt_s": 1.4,
+  "odhist_build_s": 3.2,
+  "n_unique_candidates": 455119,
+  "mean_candidates_per_od": 4.55
+}

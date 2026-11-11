@@ -1,0 +1,334 @@
+{
+  "features": [
+    "log_detour_len",
+    "log_ratio_fft",
+    "major_share",
+    "log_ratio_nseg",
+    "log_path_size"
+  ],
+  "df": 5,
+  "coef": {
+    "xian": {
+      "beta_mle": [
+        -2.1691,
+        -1.7239,
+        1.2705,
+        -4.0404,
+        0.0256
+      ],
+      "se_robust": [
+        0.3869,
+        0.4491,
+        0.1955,
+        0.4375,
+        0.15
+      ],
+      "se_model": [
+        0.0991,
+        0.0813,
+        0.0467,
+        0.0417,
+        0.0384
+      ],
+      "design_effect": [
+        15.24,
+        30.5,
+        17.54,
+        110.1,
+        15.26
+      ],
+      "ridge_vs_mle_max_rel": 0.07621,
+      "od_clusters": 22994
+    },
+    "chengdu": {
+      "beta_mle": [
+        -3.9101,
+        -2.6932,
+        1.8622,
+        -2.9669,
+        1.4182
+      ],
+      "se_robust": [
+        1.0843,
+        0.9579,
+        0.4947,
+        0.3331,
+        0.2501
+      ],
+      "se_model": [
+        0.1376,
+        0.123,
+        0.0668,
+        0.0461,
+        0.0367
+      ],
+      "design_effect": [
+        62.13,
+        60.6,
+        54.92,
+        52.1,
+        46.3
+      ],
+      "ridge_vs_mle_max_rel": 0.00957,
+      "od_clusters": 20987
+    },
+    "beijing": {
+      "beta_mle": [
+        -3.7571,
+        -4.042,
+        -0.7259,
+        -2.1454,
+        0.5207
+      ],
+      "se_robust": [
+        0.0997,
+        0.0881,
+        0.0483,
+        0.0394,
+        0.0337
+      ],
+      "se_model": [
+        0.0897,
+        0.0772,
+        0.0425,
+        0.0326,
+        0.0292
+      ],
+      "design_effect": [
+        1.24,
+        1.3,
+        1.29,
+        1.46,
+        1.33
+      ],
+      "ridge_vs_mle_max_rel": 0.01399,
+      "od_clusters": 79932
+    },
+    "porto": {
+      "beta_mle": [
+        -1.1546,
+        -4.3233,
+        0.1557,
+        -1.2366,
+        0.7464
+      ],
+      "se_robust": [
+        0.0932,
+        0.08,
+        0.045,
+        0.0377,
+        0.0293
+      ],
+      "se_model": [
+        0.0644,
+        0.0616,
+        0.0357,
+        0.0292,
+        0.0218
+      ],
+      "design_effect": [
+        2.09,
+        1.69,
+        1.58,
+        1.67,
+        1.81
+      ],
+      "ridge_vs_mle_max_rel": 0.04817,
+      "od_clusters": 78743
+    },
+    "sanfrancisco": {
+      "beta_mle": [
+        -6.7331,
+        -1.8966,
+        1.0794,
+        -1.5323,
+        1.3471
+      ],
+      "se_robust": [
+        0.0801,
+        0.0462,
+        0.0315,
+        0.0393,
+        0.0244
+      ],
+      "se_model": [
+        0.071,
+        0.0439,
+        0.0291,
+        0.0377,
+        0.0232
+      ],
+      "design_effect": [
+        1.27,
+        1.11,
+        1.17,
+        1.09,
+        1.11
+      ],
+      "ridge_vs_mle_max_rel": 0.00161,
+      "od_clusters": 94845
+    }
+  },
+  "targets": {
+    "xian": {
+      "CD": {
+        "Wald_robust": 38.1,
+        "log10_p_robust": -6.5,
+        "Wald_model": 1161.1,
+        "TTS_train": 2308.6
+      },
+      "BJ": {
+        "Wald_robust": 355.0,
+        "log10_p_robust": -73.8,
+        "Wald_model": 2806.1,
+        "TTS_train": 4286.8
+      },
+      "PT": {
+        "Wald_robust": 66.9,
+        "log10_p_robust": -12.3,
+        "Wald_model": 3372.0,
+        "TTS_train": 5767.8
+      },
+      "SF": {
+        "Wald_robust": 309.8,
+        "log10_p_robust": -64.1,
+        "Wald_model": 3689.3,
+        "TTS_train": 6564.5
+      },
+      "pooled": {
+        "Wald_robust": 107.7,
+        "log10_p_robust": -20.9,
+        "Wald_model": 2860.6,
+        "TTS_train": 3542.1
+      }
+    },
+    "chengdu": {
+      "XA": {
+        "Wald_robust": 38.1,
+        "log10_p_robust": -6.5,
+        "Wald_model": 1161.1,
+        "TTS_train": 2428.1
+      },
+      "BJ": {
+        "Wald_robust": 127.8,
+        "log10_p_robust": -25.1,
+        "Wald_model": 2263.7,
+        "TTS_train": 3283.5
+      },
+      "PT": {
+        "Wald_robust": 64.3,
+        "log10_p_robust": -11.8,
+        "Wald_model": 2514.2,
+        "TTS_train": 4430.7
+      },
+      "SF": {
+        "Wald_robust": 68.4,
+        "log10_p_robust": -12.7,
+        "Wald_model": 1375.0,
+        "TTS_train": 2056.7
+      },
+      "pooled": {
+        "Wald_robust": 46.0,
+        "log10_p_robust": -8.0,
+        "Wald_model": 1450.4,
+        "TTS_train": 1805.9
+      }
+    },
+    "beijing": {
+      "XA": {
+        "Wald_robust": 355.0,
+        "log10_p_robust": -73.8,
+        "Wald_model": 2806.1,
+        "TTS_train": 9215.8
+      },
+      "CD": {
+        "Wald_robust": 127.8,
+        "log10_p_robust": -25.1,
+        "Wald_model": 2263.7,
+        "TTS_train": 9163.1
+      },
+      "PT": {
+        "Wald_robust": 1819.4,
+        "log10_p_robust": -Infinity,
+        "Wald_model": 2795.8,
+        "TTS_train": 4972.8
+      },
+      "SF": {
+        "Wald_robust": 1750.9,
+        "log10_p_robust": -Infinity,
+        "Wald_model": 2087.0,
+        "TTS_train": 3718.3
+      },
+      "pooled": {
+        "Wald_robust": 970.4,
+        "log10_p_robust": -206.8,
+        "Wald_model": 2150.5,
+        "TTS_train": 2852.7
+      }
+    },
+    "porto": {
+      "XA": {
+        "Wald_robust": 66.9,
+        "log10_p_robust": -12.3,
+        "Wald_model": 3372.0,
+        "TTS_train": 10290.1
+      },
+      "CD": {
+        "Wald_robust": 64.3,
+        "log10_p_robust": -11.8,
+        "Wald_model": 2514.2,
+        "TTS_train": 7696.4
+      },
+      "BJ": {
+        "Wald_robust": 1819.4,
+        "log10_p_robust": -Infinity,
+        "Wald_model": 2795.8,
+        "TTS_train": 8942.4
+      },
+      "SF": {
+        "Wald_robust": 2520.1,
+        "log10_p_robust": -Infinity,
+        "Wald_model": 4185.9,
+        "TTS_train": 9005.7
+      },
+      "pooled": {
+        "Wald_robust": 960.8,
+        "log10_p_robust": -204.7,
+        "Wald_model": 5021.8,
+        "TTS_train": 6786.2
+      }
+    },
+    "sanfrancisco": {
+      "XA": {
+        "Wald_robust": 309.8,
+        "log10_p_robust": -64.1,
+        "Wald_model": 3689.3,
+        "TTS_train": 11657.3
+      },
+      "CD": {
+        "Wald_robust": 68.4,
+        "log10_p_robust": -12.7,
+        "Wald_model": 1375.0,
+        "TTS_train": 9996.7
+      },
+      "BJ": {
+        "Wald_robust": 1750.9,
+        "log10_p_robust": -Infinity,
+        "Wald_model": 2087.0,
+        "TTS_train": 6032.3
+      },
+      "PT": {
+        "Wald_robust": 2520.1,
+        "log10_p_robust": -Infinity,
+        "Wald_model": 4185.9,
+        "TTS_train": 11662.1
+      },
+      "pooled": {
+        "Wald_robust": 834.0,
+        "log10_p_robust": -177.3,
+        "Wald_model": 3321.2,
+        "TTS_train": 5404.0
+      }
+    }
+  }
+}

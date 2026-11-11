@@ -1,0 +1,35 @@
+{
+  "chengdu": {
+    "src": "xian",
+    "map6_incity": {
+      "top1_length": 0.8709,
+      "flow_nmae": 0.2113
+    },
+    "map6_zeroshot": {
+      "top1_length": 0.8656,
+      "flow_nmae": 0.2228
+    }
+  },
+  "xian": {
+    "src": "chengdu",
+    "map6_incity": {
+      "top1_length": 0.8522,
+      "flow_nmae": 0.2463
+    },
+    "map6_zeroshot": {
+      "top1_length": 0.8505,
+      "flow_nmae": 0.2449
+    }
+  },
+  "porto": {
+    "src": "chengdu",
+    "map6_incity": {
+      "top1_length": 0.6509,
+      "flow_nmae": 0.3706
+    },
+    "map6_zeroshot": {
+      "top1_length": 0.645,
+      "flow_nmae": 0.3707
+    }
+  }
+}

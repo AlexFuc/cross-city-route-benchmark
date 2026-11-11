@@ -1,0 +1,76 @@
+{
+  "city": "xian",
+  "N_links": 4147,
+  "N_edges": 8796,
+  "logspace_vs_exact_max_abs_err": [
+    7.94528887126944e-11,
+    1.006839056572062e-10
+  ],
+  "incity_fit": {
+    "sec": 40.2,
+    "success": true,
+    "nit": 21,
+    "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+    "beta": [
+      -1.8887,
+      0.7715,
+      -0.1758,
+      -2.245,
+      -0.2941
+    ],
+    "ll_trace": [
+      -3.1219,
+      -2.4285,
+      -2.2127,
+      -2.2063,
+      -2.2061,
+      -2.2061
+    ]
+  },
+  "incity_transfer_link_const_shift": 0.0,
+  "incity_eval": {
+    "exists": true,
+    "test_ll_per_trip": -2.3217,
+    "top1_count": 0.8568,
+    "top1_length": 0.8554,
+    "flow_nmae": 0.3286
+  },
+  "zeroshot_fit": {
+    "sec": 60.6,
+    "success": true,
+    "nit": 24,
+    "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+    "beta": [
+      -1.2782,
+      0.0873,
+      -0.3399,
+      -1.912,
+      -1.0506
+    ],
+    "ll_trace": [
+      -2.6276,
+      -2.1023,
+      -2.0815,
+      -2.0813,
+      -2.0813,
+      -2.0813,
+      -2.0813
+    ]
+  },
+  "zeroshot_transfer_link_const_shift": 0.0,
+  "zeroshot_eval": {
+    "exists": true,
+    "test_ll_per_trip": -2.4384,
+    "top1_count": 0.8494,
+    "top1_length": 0.8488,
+    "flow_nmae": 0.3272
+  },
+  "map6_incity_same10k": {
+    "top1_count": 0.8565,
+    "flow_nmae": 0.2478
+  },
+  "map6_zeroshot_same10k": {
+    "top1_count": 0.8526,
+    "flow_nmae": 0.2445
+  }
+}

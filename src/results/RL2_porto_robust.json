@@ -1,0 +1,51 @@
+{
+  "city": "porto",
+  "N_links": 11024,
+  "N_edges": 25991,
+  "logspace_vs_exact_max_abs_err": [
+    1.0629719326971099e-10,
+    9.345058060716838e-11
+  ],
+  "incity_fit": {
+    "sec": 2427.6,
+    "success": true,
+    "nit": 60,
+    "message": "robust-armijo",
+    "final_grad_norm": 0.25488321297042404,
+    "beta": [
+      -1.3755,
+      0.2973,
+      -0.1815,
+      -1.895,
+      -1.0687
+    ],
+    "ll_trace": [
+      -8.8352,
+      -8.335,
+      -8.331,
+      -8.3272,
+      -8.3239,
+      -8.321,
+      -8.3184,
+      -8.3161,
+      -8.3133,
+      -8.3111,
+      -8.3087,
+      -8.3065,
+      -8.3046,
+      -8.3046
+    ]
+  },
+  "incity_transfer_link_const_shift": 0.0,
+  "incity_eval": {
+    "exists": true,
+    "test_ll_per_trip": -8.4375,
+    "top1_count": 0.6021,
+    "top1_length": 0.6141,
+    "flow_nmae": 0.4873
+  },
+  "map6_incity_same10k": {
+    "top1_count": 0.6416,
+    "flow_nmae": 0.3697
+  }
+}
